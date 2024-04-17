@@ -1,0 +1,49 @@
+[31-Aug-2021 17:17:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:17:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:17:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:17:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:17:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:23:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:24:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mirrormefashiondev.translations' doesn't exist in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('select * from `...')
+#1 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\Database\Connection->run('select * from `...', Array in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[31-Aug-2021 17:24:55 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:437
+Stack trace:
+#0 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mirrormefashion/shop.mirrormefashion.com/storage/framework/views/09febef811540cd633d015510006b3442b9086c2.php(40): route('home')
+#2 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/mirrormef...')
+#3 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mirrormef...', Array)
+#4 /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\Vie in /home/mirrormefashion/shop.mirrormefashion.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 437

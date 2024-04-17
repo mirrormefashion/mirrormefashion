@@ -1,0 +1,2 @@
+ALTER TABLE `body_data` ADD `weight_class` VARCHAR(40) NULL DEFAULT NULL AFTER `legs_bg_pos`;
+ALTER TABLE `users` ADD `nick_name` VARCHAR(15) NULL DEFAULT NULL AFTER `name`;

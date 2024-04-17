@@ -1,0 +1,471 @@
+/*-------Body Features ----*/
+
+
+/*--------- Heads --------*/
+
+#female-skinny-head,
+#female-average-head,
+#female-above-head {
+    position: relative;
+    margin: 0 auto;
+    width: 481px;
+    height: 145px;
+    background-image: url('../img/sprite/skinny-head.png');
+    z-index: 1001;
+}
+#female-morbid-head {
+    position: relative;
+    margin: 0 auto;
+    width: 581px;
+    height: 175px;
+    background-image: url('../img/sprite/morbid-head.png');
+    z-index: 1001;
+}
+
+#female-skinny-head {
+    bottom: -113px;
+}
+
+#female-average-head {
+    bottom: -116px;
+    right: -2px;
+}
+
+#female-above-head {
+    bottom: -96px;
+    right: -1px;
+}
+
+#female-OW-head {
+    bottom: -89px;
+    right: 4px;
+}
+
+#female-morbid-head {
+    bottom: -74px;
+    right: -1px;
+    
+}
+
+/*
+#female-above-head {
+    position: relative;
+    margin: 0 auto;
+    bottom: -96px;
+    width: 481px;
+    height: 145px;
+    background-image: url('../img/sprite/above-head.png');
+    z-index: 1001;
+}
+
+
+#female-morbid-head {
+    position: relative;
+    margin: 0 auto;
+    width: 526px;
+    height: 163px;
+    background-image: url('../img/sprite/morbid-head.png');
+    z-index: 1000;
+}
+*/
+
+
+
+/*--------- Skinny Heads --------*/
+
+
+
+#female-skinny-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -25px;
+    width: 481px;
+    height: 125px;
+    background-image: url('../img/sprite/skinny-neck.png');
+    z-index: 900;
+} 
+
+
+#female-skinny-breasts {
+    position: relative;
+    margin: 0 auto;
+    bottom: 45px;
+    width: 481px;
+    height: 232px;
+    background-image: url('../img/sprite/skinny-breasts.png');
+    z-index: 950;
+}
+
+#female-skinny-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 284px;
+    width: 481px;
+    height: 237px;
+    background-image: url('../img/sprite/skinny-shoulders.png');
+    z-index: 550;
+}
+
+#female-skinny-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 491px;
+    width: 481px;
+    height: 231px;
+    background-image: url('../img/sprite/skinny-stomach.png');
+    z-index: 500;
+}
+
+
+#female-skinny-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 574px;
+    right: 2px;
+    width: 481px;
+    height: 422px;
+    background-image: url('../img/sprite/skinny-legs.png');
+    z-index: 499;
+}
+
+
+
+/*--------- Average --------*/
+
+
+/*
+#female-average-head {
+  position: relative;
+  margin: 0 auto;
+  bottom: 42px;
+  width: 481px;
+  height: 192px;   
+  background-image: url('../img/sprite/average-head.png'); 
+  z-index: 900;
+}
+*/
+
+
+#female-average-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -29px;
+    width: 481px;
+    height: 132px;
+    background-image: url('../img/sprite/average-neck.png');
+    z-index: 900;
+}
+
+
+#female-average-breasts {
+    position: relative;
+    margin: 0 auto;
+    bottom: 73px;
+    width: 481px;
+    height: 254px;
+    background-image: url('../img/sprite/average-breasts.png');
+    z-index: 950;
+}
+
+#female-average-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 313px;
+    width: 481px;
+    height: 235px;
+    background-image: url('../img/sprite/average-shoulders.png');
+    z-index: 550;
+}
+
+
+#female-average-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 510px;
+    width: 481px;
+    height: 292px;
+    background-image: url('../img/sprite/average-stomach.png');
+    z-index: 500;
+}
+
+
+#female-average-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 710px;
+    width: 481px;
+    height: 472px;
+    background-image: url('../img/sprite/average-legs.png');
+    z-index: 499;
+}
+
+
+
+/*----------- Female Above ------------*/
+#female-above-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -10px;
+    width: 481px;
+    height: 161px;
+    background-image: url('../img/sprite/above-neck.png');
+    z-index: 900;
+}
+
+
+#female-above-breasts {
+    position: relative;
+    margin: 0 auto;
+    bottom: 99px;
+    width: 481px;
+    height: 266px;
+    background-image: url('../img/sprite/above-breasts.png');
+    z-index: 950;
+}
+
+#female-above-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 376px;
+    width: 481px;
+    height: 295px;
+    background-image: url('../img/sprite/above-shoulders.png');
+    z-index: 550;
+}
+
+#female-above-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 626px;
+    width: 481px;
+    height: 314px;
+    background-image: url('../img/sprite/above-stomach.png');
+    z-index: 500;
+}
+
+#female-above-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 884px;
+    width: 481px;
+    height: 516px;
+    background-image: url('../img/sprite/above-legs.png');
+    z-index: 499;
+}
+
+/*------- Female Morbid ------*/
+
+#female-morbid-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: 45px;
+    width: 581px;
+    height: 199px;
+    background-image: url('../img/sprite/morbid-neck.png');
+    z-index: 800;
+}
+
+#female-morbid-breasts {
+    position: relative;
+    margin: 0 auto;
+    bottom: 173px;
+    width: 581px;
+    height: 257px;
+    background-image: url('../img/sprite/morbid-breasts.png');
+    z-index: 1050;
+}
+
+#female-morbid-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 444px;
+    width: 581px;
+    height: 276px;
+    background-image: url('../img/sprite/morbid-shoulders.png');
+    z-index: 550;
+}
+
+#female-morbid-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 668px;
+    width: 581px;
+    height: 302px;
+    background-image: url('../img/sprite/morbid-stomach.png');
+    z-index: 500;
+}
+
+#female-morbid-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 875px;
+    width: 581px;
+    height: 468px;
+    background-image: url('../img/sprite/morbid-legs.png');
+    z-index: 499;
+}
+
+
+/* ------ MALE SHAPES ------*/
+/*--------- Male Heads --------*/
+
+#male-skinny-head,
+#male-average-head,
+#male-OW-head {
+    position: relative;
+    margin: 0 auto;
+    width: 647px;
+    height: 129px;
+    background-image: url('../img/sprite/male-skinny-head.png');
+    z-index: 1001;
+}
+
+#male-skinny-head {
+    bottom: -100px;
+    right: 0px;
+}
+
+#male-average-head {
+    bottom: -96px;
+}
+
+#male-OW-head {
+    bottom: -98px;
+    right: -2px;
+}
+
+
+/*--------- Male Skinny --------*/
+
+#male-skinny-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -45px;
+    width: 647px;
+    height: 114px;
+    background-image: url('../img/sprite/male-skinny-neck.png');
+    z-index: 900;
+}
+
+#male-skinny-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 31px;
+    width: 647px;
+    height: 230px;
+    background-image: url('../img/sprite/male-skinny-shoulders.png');
+    z-index: 550;
+}
+
+#male-skinny-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 232px;
+    width: 647px;
+    height: 263px;
+    background-image: url('../img/sprite/male-skinny-stomach.png');
+    z-index: 500;
+}
+
+#male-skinny-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 392px;
+    width: 647px;
+    height: 457px;
+    background-image: url('../img/sprite/male-skinny-legs.png');
+    z-index: 499;
+}
+
+
+/*--------- Male Average --------*/
+
+#male-average-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -41px;
+    width: 647px;
+    height: 119px;
+    background-image: url('../img/sprite/male-average-neck.png');
+    z-index: 900;
+}
+
+#male-average-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 47px;
+    width: 647px;
+    height: 241px;
+    background-image: url('../img/sprite/male-average-shoulders.png');
+    z-index: 550;
+}
+
+#male-average-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 264px;
+    width: 647px;
+    height: 303px;
+    background-image: url('../img/sprite/male-average-stomach.png');
+    z-index: 500;
+}
+
+#male-average-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 477px;
+    width: 647px;
+    height: 478px;
+    background-image: url('../img/sprite/male-average-legs.png');
+    z-index: 499;
+}
+
+
+/*----------- Male OW ------------*/
+
+#male-OW-neck {
+    position: relative;
+    margin: 0 auto;
+    bottom: -25px;
+    width: 647px;
+    height: 140px;
+    background-image: url('../img/sprite/male-OW-neck.png');
+    z-index: 900;
+}
+
+#male-OW-shoulders {
+    position: relative;
+    margin: 0 auto;
+    bottom: 56px;
+    width: 647px;
+    height: 234px;
+    background-image: url('../img/sprite/male-OW-shoulders.png');
+    z-index: 550;
+}
+
+#male-OW-stomach {
+    position: relative;
+    margin: 0 auto;
+    bottom: 276px;
+    width: 647px;
+    height: 290px;
+    background-image: url('../img/sprite/male-OW-stomach.png');
+    z-index: 500;
+}
+
+#male-OW-legs {
+    position: relative;
+    margin: 0 auto;
+    bottom: 490px;
+    width: 647px;
+    height: 501px;
+    background-image: url('../img/sprite/male-OW-legs.png');
+    z-index: 499;
+}
+
+#spanimation {
+    height: 112px;
+    width: 155px;
+    background-image: url('./public/images/celebration.png');
+    z-index: 1000;
+}

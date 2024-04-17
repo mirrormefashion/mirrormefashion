@@ -1,0 +1,1 @@
+CREATE TABLE `bongoplaza`.`body_stats` (`id` INT NOT NULL AUTO_INCREMENT , `body_data_id` INT NOT NULL , `slider_values` INT NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;

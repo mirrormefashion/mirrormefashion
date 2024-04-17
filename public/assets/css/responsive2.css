@@ -1,0 +1,1220 @@
+@media (min-width: 1290px) {
+    #origin #artwork {
+        margin-top: -15%;
+        transform: scale(.8);
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    #controllerLeft,
+    #controllerRight {
+        width: 30%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+    .horizontal #introduction,
+    .horizontal #precursor {
+        background-size: 120%;
+    }
+    #origin .col-lg-4 {
+        height: 90vh;
+    }
+    div#origin {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 1051px) {
+    #mobile #mobile-precursor,
+    #mobile #mobile-introduction,
+    #mobile #mobile-warning,
+    #mobile #mobile-origin {
+        display: block!important;
+    }
+    #aiz-mobile {
+        overflow-x: hidden;
+    }
+    #proceed-now {
+        padding: 12px 70px;
+        width: 33%;
+    }
+    #home-foot {
+        display: flex;
+        position: sticky;
+        height: 10%;
+        background-color: #000;
+        color: #940A0A;
+        font-size: 12px;
+        width: 106%;
+        padding: 3% 2%;
+        margin-left: -2.15%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #mobile #conclusion a {
+        color: #2275d7;
+    }
+    .talkradio label {
+        font-size: 14px;
+    }
+    #mobile .main-menu nav ul li a {
+        background: #99000000!important;
+    }
+    #mobile .mobile-summit .col-sm-12 .mobile-button {
+        display: block;
+        background-color: #990000;
+        color: #fff;
+        text-align: center;
+        width: 49%;
+        padding: 4% 5%;
+        margin: 0 auto;
+        border-radius: 47px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+    #mobile .reply-box p {
+        font-size: 15px;
+        font-weight: 550;
+        color: #900;
+    }
+    .input-group {
+        z-index: 1500;
+    }
+}
+
+
+/* modelers positioning */
+@media (max-width: 800px) {
+    #mobile .mobile-introduction .content {
+        position: absolute;
+        bottom: 20vw;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.50);
+        text-align: right;
+        padding: 5%;
+    }
+    #mobile #origin div#nudeModelsImg {
+        padding-top: 5%;
+    }
+    .free {
+        font-size: 9vw;
+    }
+    .sub-well h1 {
+        color: #ffffff;
+        font-size: 5.25vw;
+    }
+    p.specialp {
+        font-size: 4vw;
+    }
+    .specialp:first-of-type {
+        font-size: 2vw;
+    }
+    .specialp:last-of-type {
+        font-size: 3vw;
+    }
+    .mobile-summit {
+        position: relative;
+    }
+    .mobile-summit,
+    .mobile-conclusion {
+        display: none;
+    }
+    #mobile .mobile-summit .col-sm-12 h4 {
+        color: #990000;
+        text-align: center;
+    }
+    .mobile-summit .col-sm-12 h3 {
+        color: #dc3545;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    #mobile .mobile-precursor,
+    #mobile .mobile-introduction {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 230%;
+    }
+    h1.display-3.text-center {
+        font-size: 4vw;
+        color: #990000;
+    }
+    h2.text-center {
+        font-size: 3vw;
+        color: #a94442;
+    }
+    #origin .col-lg-4 {
+        height: 88%;
+        max-width: 90%!important;
+        margin: 0 auto;
+        float: none!important;
+    }
+    .chat-part {
+        margin: 5% 10%;
+    }
+    #chat-bubbles {
+        font-size: 2.5vw;
+    }
+    .talkradio label {
+        font-size: 20px;
+    }
+    section#summit {
+        height: 115vh;
+    }
+    #toggle-info {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .openicon {
+        position: absolute;
+        top: 5.5%;
+        left: 1%;
+        width: 11%;
+        z-index: 1001;
+    }
+    #mobileDisplay1 h4 {
+        text-align: center;
+        font-size: 4vw;
+        padding-top: 4%;
+    }
+    #mobile .select {
+        width: 85%;
+        float: right;
+        margin-top: 17%;
+        height: 7vw;
+        font-size: 2.25vw;
+        text-align: center;
+        background-color: rgba(52, 58, 64, 0.5);
+        color: #fff;
+        border-style: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    .mobile-summit .mobile-controller .feature-container {
+        width: 100%;
+        margin: 0 -2% 0 0!important;
+        overflow: hidden;
+        padding: 1em;
+        border: none;
+        border-radius: 0;
+        background-color: rgb(253 253 253 / 0%);
+        box-shadow: none;
+    }
+    .front-controls-full.m-modeller {
+        width: 80%;
+        float: right;
+        margin-right: 4%;
+    }
+    div#mcontrols-wrap-large {
+        width: 50%;
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+    }
+    #mobile .mobile-summit .col-sm-12 .mobile-button {
+        display: inline-flex;
+        background-color: #990000;
+        color: #fff;
+        text-align: center;
+        width: 50%;
+        padding: 3% 14%;
+        margin-left: 35%;
+        border-radius: 47px;
+        font-size: 12px;
+        font-weight: 400;
+        height: 20%!important;
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    #mobile .mobile-summit #mcontrols {
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        left: 1%;
+    }
+}
+
+@media (max-width: 600px) {
+    p#beta {
+        font-size: 14px;
+    }
+    .header-middle {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img {
+        width: 30%;
+    }
+    #mobile .mobile-precursor,
+    #mobile .mobile-introduction {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 230%;
+    }
+    #mobile .mobile-precursor {
+        margin-top: -3%;
+    }
+    #mobile .mobile-precursor .content {
+        padding: 60% 0 0 0%;
+    }
+    #mobile .mobile-precursor .content div {
+        background-color: rgba(0, 0, 0, 0.50);
+        text-align: left;
+        padding: 5%;
+    }
+    #mobile .mobile-introduction .content {
+        position: absolute;
+        bottom: 20vw;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.50);
+        text-align: right;
+        padding: 5%;
+    }
+    #mobile .mobile-precursor .section-title {
+        font-size: 46px;
+        text-align: left;
+        line-height: 46px;
+    }
+    /* introduction */
+    #mobile .mobile-introduction {
+        margin-top: -8%;
+    }
+    #mobile .mobile-introduction .sub-well h1 {
+        font-size: 6vw;
+    }
+    #mobile .mobile-introduction .sub-well .free {
+        font-size: 11vw;
+    }
+    #mobile .mobile-introduction .content h2 {
+        font-size: 36px;
+        text-align: left;
+    }
+    #mobile .mobile-introduction .sub-well .specialp:first-of-type {
+        font-size: 22px;
+    }
+    #mobile .mobile-introduction .sub-well .specialp {
+        font-size: 4vw;
+    }
+    #mobile .mobile-introduction .sub-well {
+        text-align: right;
+    }
+    #mobile #introduction .block-33 {
+        position: absolute;
+        bottom: 29vw;
+        height: 26%;
+        margin: 0;
+    }
+    #mobile #introduction .block-33 p:last-of-type {
+        font-size: 2.5vw;
+        margin-top: 1vw;
+        color: #fff;
+    }
+    .mobile-introduction .block-33 h1 {
+        font-size: 4.25vw;
+    }
+    .mobile-introduction .block-33 .free {
+        font-size: 6vw;
+    }
+    #mobile .mobile-introduction .block-33 .sub-well p:first-of-type {
+        font-size: 3vw!important;
+    }
+    .mobile-introduction .block-33 .sub-well .para {
+        font-size: 2.5vw;
+    }
+    #mobile .mobile-origin .col-lg-4,
+    #mobile .mobile-origin .col-md-4,
+    #mobile .mobile-origin .col-sm-4 {
+        height: 90%;
+        max-width: 90%!important;
+        margin: 0 auto;
+        float: none!important;
+    }
+    /* origin */
+    #mobile .mobile-origin {
+        max-height: 100vh!important;
+        display: block;
+        padding-bottom: 5%;
+    }
+    #mobile #nudeModelsImg .display-3 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 5vw;
+        color: #990000;
+        font-weight: 400;
+    }
+    div#virtual-stylist {
+        height: 70%;
+    }
+    #mobile #nudeModelsImg h2 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 4vw;
+        font-weight: 400;
+        color: #dc3545;
+    }
+    #moble .chat-content {
+        min-height: 70vw;
+    }
+    #moble .chat-content .chat-body {
+        min-height: 60vw;
+    }
+    #mobile .ar-label {
+        font-size: 14px;
+        line-height: 3vw;
+        padding: 2% 4%;
+    }
+    #mobile .talk-bubble.tri-right.round.btm-left {
+        width: 90%;
+    }
+    #mobile .mobile-origin #sophiaChat #virtual-stylist .chat-dialog .chat-content #chat-form input#form-input {
+        font-size: 14px;
+    }
+    #chat-convo,
+    #origin-next {
+        font-size: 16px;
+    }
+    /* summit */
+    #mobile .mobile-summit {
+        position: relative;
+        left: 0!important;
+    }
+    #mobile .mobile-summit #mobileDisplay1 {
+        text-align: center;
+    }
+    #mobile .mobile-summit .col-sm-12 h4 {
+        margin-top: 2%;
+        font-size: 26px;
+        padding-top: 3%;
+        color: #990000;
+        text-align: center;
+    }
+    .mobile-summit .col-sm-12 h3 {
+        font-size: 20px;
+        margin-top: -2%;
+        color: #dc3545;
+    }
+    .mobile-summit .col-sm-12 #mobileToolie {
+        /*not currently in use */
+        font-size: 15px;
+        position: absolute;
+        left: 15%;
+        width: 80%;
+        background-color: rgb(153 0 0 / 20%);
+        padding: 2%;
+        text-align: left;
+        z-index: 1000;
+    }
+    .mobile-summit .mobile-controller .feature-container {
+        width: 100%;
+        margin: 0 -2% 0 0!important;
+        overflow: hidden;
+        padding: 1em;
+        border: none;
+        border-radius: 0;
+        background-color: rgb(253 253 253 / 0%);
+        box-shadow: none;
+    }
+    #mobile .feature-group-wrap table th:first-child {
+        font-size: 14px!important;
+        font-weight: 400;
+    }
+    .mobile-summit .mobile-controller .feature-container {
+        padding: 0px;
+    }
+    #mobile .select {
+        width: 110%;
+        height: 36px;
+        font-size: 4vw;
+        text-align: center;
+        background-color: rgba(52, 58, 64, 0.5);
+        color: #fff;
+        border-style: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        z-index: 500;
+    }
+    #mobile #dropArrow {
+        display: none;
+    }
+    #mobile .feature-group-wrap table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #mobile .feature-group-wrap table th:first-child {
+        width: 45%;
+        font-size: 13px;
+        height: 2vw;
+    }
+    #mobile .feature-group-wrap table th:nth-child(2) {
+        width: 40%;
+    }
+    #mobile .mobile-summit #modeller-buttons {
+        position: absolute;
+        bottom: 50px;
+    }
+    #mobile .mobile-summit #column-center {
+        float: left;
+    }
+    #mobile .mobile-summit #mcontrols {
+        position: absolute;
+        bottom: 5%;
+        left: -4%;
+    }
+    #mobile .mobile-summit #mcontrols-wrap-large {
+        width: 50%;
+        position: absolute;
+        top: 17%;
+        right: 1%;
+    }
+    #toggle-info {
+        position: absolute;
+        right: 10px;
+        top: 34px;
+        float: left;
+        z-index: 100;
+    }
+    .openicon {
+        position: absolute;
+        top: -0.5%;
+        left: 4%;
+        width: 11%;
+        z-index: 1001;
+    }
+    .openicon:hover {
+        transform: scale(1.25) translateX(2px);
+    }
+    #toggle-closed {
+        display: none;
+    }
+    .front-controls-full.m-modeller {
+        width: 100%;
+        background-color: rgb(255 255 255 / 25%);
+        margin-left: 4%;
+    }
+    .tick-slider-background,
+    .tick-slider-progress,
+    .tick-slider-tick-container {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: var(--slider-track-height);
+        pointer-events: none;
+        border-radius: var(--slider-track-border-radius);
+        z-index: 0;
+        background-color: #dee2e6;
+    }
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 109%;
+        background: transparent;
+        outline: none;
+        margin: 0px -9px;
+    }
+    #mobile .mobile-summit .col-sm-12 .mobile-button {
+        display: block;
+        background-color: #990000;
+        color: #fff;
+        text-align: center;
+        width: 49%;
+        padding: 4% 5%;
+        margin-right: 19%;
+        border-radius: 47px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+    /* conclusion */
+    #mobile .mobile-conclusion {
+        position: relative;
+        justify-content: space-around;
+        left: 0!important;
+    }
+    #mobile #complete .btn {
+        width: 30%;
+    }
+    #mobile .mobile-conclusion div .col-sm-12 {
+        margin-top: 2%;
+        color: #990000;
+    }
+    #mobile .mobile-conclusion #demo_data,
+    #mobile .mobile-conclusion #body_stats,
+    #mobile .mobile-conclusion #join_agree {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #mobile .mobile-conclusion .col-lg-8 {
+        margin: 0 auto;
+    }
+    #mobile #home-foot {
+        position: relative;
+        text-align: center;
+        background-color: #000;
+        font-size: 15px;
+    }
+    #mobile #home-foot small {
+        font-size: 65%;
+    }
+    #mobile #home-foot .col-lg-10,
+    #mobile #home-foot .col-md-10,
+    #mobile #home-foot .col-sm-10 {
+        margin: 0 auto;
+    }
+    #mobile #home-foot a {
+        color: #fff;
+    }
+    /*--- menu ----*/
+    .header-middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .menu-bar {
+        cursor: pointer;
+    }
+    .menu-bar i {
+        font-size: 2.5rem;
+        color: #fff;
+        margin: 0;
+        display: inline-block;
+    }
+    .main-menu {
+        background-color: #900;
+        left: 0;
+    }
+    .main-menu nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-menu .menu-item {
+        transition: 0.5s;
+        opacity: 0;
+        display: none;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    .menu-item.menu-activated {
+        opacity: 1;
+        display: block;
+    }
+    .primary-menu {
+        background: #900;
+        z-index: -99;
+    }
+    .main-menu nav ul li a {
+        margin-top: 3%;
+    }
+    .menu-bar {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    #mobile #introduction {
+        margin-top: -24%!important;
+        left: 0!important;
+    }
+    #mobile .mobile-introduction .sub-well p:last-of-type {
+        font-size: 3.75vw!important;
+    }
+    #mobile #summit {
+        left: 0!important;
+    }
+    .mobile-summit .mobile-controller {
+        margin-top: -40%!important;
+    }
+    #mobile .viewport {
+        min-width: 100%;
+        height: 100vh;
+    }
+    #mobile .mobile-origin {
+        min-width: 100%;
+        height: 100vh!important;
+    }
+    #mobile .mobile-summit,
+    #mobile .mobile-conclusion {
+        min-width: 100%;
+        height: 100vh!important;
+    }
+    #mobile .mobile-summit .col-sm-12 .mobile-button {
+        padding: 2% 3%;
+        margin-bottom: -4%;
+    }
+}
+
+@media (max-width: 500px) {
+    #mobile .mobile-introduction .sub-well .specialp:first-of-type {
+        font-size: 20px;
+    }
+    #chat-bubbles {
+        width: 70%;
+    }
+    #mobile .ar-label {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    #mobile .mobile-precursor {
+        margin-top: -10%;
+    }
+    #mobile .mobile-precursor,
+    #mobile .mobile-introduction {
+        background-size: initial!important;
+    }
+}
+
+@media (max-width: 376px) {
+    .feature-group-wrap table th label {
+        display: inline-block;
+        margin-top: 4%;
+        font-weight: 100;
+    }
+    #mobile .feature-group-wrap table th:first-child {
+        width: 45%;
+        font-size: 20px;
+        height: 0vw;
+    }
+    .tick-slider-background,
+    .tick-slider-progress,
+    .tick-slider-tick-container {
+        position: absolute;
+        bottom: 6px;
+    }
+}
+
+
+/*----------- controller sizing --------------*/
+
+@media (min-width: 526px) and (max-width: 600px) {
+    #mobile .mobile-summit #mcontrols {
+        transform: scale(.75)!important;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 525px) {
+    #mobile .mobile-summit #mcontrols {
+        transform: scale(.8)!important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 424px) {
+    .front-controls-full.m-modeller {
+        transform: scale(.9);
+    }
+}
+
+@media (max-width: 374px) {
+    #chat-convo,
+    #origin-next {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    #toggle-info {
+        position: absolute;
+        right: 1px;
+        top: 3px;
+        z-index: 100;
+    }
+}
+
+
+/*------------------------------------
+    --------------------------------------
+            Body Modeler Styling
+    --------------------------------------
+    ------------------------------------*/
+
+@media (max-width: 1050px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above,
+    .mobile-summit .female_morbid,
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average,
+    .mobile-summit .male_OW,
+    .mobile-summit .male_morbid {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+@media (min-width: 675px) and (max-width: 700px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: 10%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -20%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average,
+    .mobile-summit .male_OW {
+        transform: scale(.45);
+        bottom: 56vw;
+        left: -31vw;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 675px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: 10%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -20%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.56);
+        bottom: 37vw;
+        left: -36vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 650px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: 10%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -20%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.56);
+        bottom: 37vw;
+        left: -36vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 625px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: 10%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -16%!important;
+        margin-left: 6%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.56);
+        bottom: 37vw;
+        left: -36vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: -1%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -16%!important;
+        margin-left: 6%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.8);
+        bottom: 12vw;
+        left: -6vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.7);
+        bottom: 14vw;
+        left: -6vw;
+    }
+}
+
+@media (min-width: 525px) and (max-width: 550px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: -2%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -16%!important;
+        margin-left: -3%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.8);
+        bottom: 12vw;
+        left: -9vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.7);
+        bottom: 21vw;
+        left: -12vw;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 525px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: -2%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -16%!important;
+        margin-left: -9%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.8);
+        bottom: 12vw;
+        left: -13vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.7);
+        bottom: 21vw;
+        left: -12vw;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 500px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.8)!important;
+        margin-top: -13%!important;
+        margin-left: -3%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.7)!important;
+        margin-top: -13%!important;
+        margin-left: -10%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.8);
+        bottom: 12vw;
+        left: -16vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 475px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.7)!important;
+        margin-top: -20%!important;
+        margin-left: -6%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.7)!important;
+        margin-top: -13%!important;
+        margin-left: -12%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.7);
+        bottom: 21vw;
+        left: -17vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 450px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.7)!important;
+        margin-top: -20%!important;
+        margin-left: -9%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -17%!important;
+        margin-left: -13%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.56);
+        bottom: 37vw;
+        left: -36vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 425px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.65)!important;
+        margin-top: -32%!important;
+        margin-left: -11%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -17%!important;
+        margin-left: -17%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.7);
+        bottom: 21vw;
+        left: -23vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.65)!important;
+        margin-top: -32%!important;
+        margin-left: -10%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -20%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.7);
+        bottom: 21vw;
+        left: -27vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 375px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.65)!important;
+        margin-top: -32%!important;
+        margin-left: -15%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.6)!important;
+        margin-top: -33%!important;
+        margin-left: -23%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.6);
+        bottom: 32vw;
+        left: -27vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 350px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -18%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.55)!important;
+        margin-top: -33%!important;
+        margin-left: -24%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.6);
+        bottom: 34vw;
+        left: -30vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -36vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 325px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.65)!important;
+        margin-top: -33%!important;
+        margin-left: -20%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.5)!important;
+        margin-top: -40%!important;
+        margin-left: -26%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average {
+        transform: scale(.56);
+        bottom: 37vw;
+        left: -36vw;
+    }
+    .mobile-summit .male_OW {
+        transform: scale(.55);
+        bottom: 37vw;
+        left: -33vw;
+    }
+}
+
+@media (max-width: 299px) {
+    .mobile-summit .female_skinny,
+    .mobile-summit .female_average,
+    .mobile-summit .female_above {
+        transform: scale(.6)!important;
+        margin-top: -40%!important;
+        margin-left: -24%!important;
+    }
+    .mobile-summit .female_morbid {
+        transform: scale(.6)!important;
+        margin-top: -40%!important;
+        margin-left: -24%!important;
+    }
+    .mobile-summit .male_skinny,
+    .mobile-summit .male_average,
+    .mobile-summit .male_OW {
+        transform: scale(.45);
+        bottom: 56vw;
+        left: -31vw;
+    }
+}
+
+
+/* non homepage styling */
+
+@media screen and (max-width: 1030px) {
+    #user-account-page .page-inner .col-lg-4,
+    #user-account-page .page-inner .col-md-4,
+    #user-account-page .page-inner .col-xs-4 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    #user-account-page .page-inner .col-lg-8,
+    #user-account-page .page-inner .col-md-8,
+    #user-account-page .page-inner .col-xs-8 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    footer {
+        width: 100%!important;
+    }
+    footer .lh-normal {
+        text-align: center;
+    }
+    footer .container .row h4 {
+        color: #fff!important;
+    }
+    #footer-icons h4 {
+        font-size: 20px;
+        margin-top: 8%;
+    }
+    footer .container .row h4,
+    footer .container .row h5 {
+        color: yellow !important;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    #heading-alpha {
+        margin-left: 3% !important;
+    }
+    #login-button-mobile a:first-of-type {
+        margin-left: 34%;
+    }
+    #fb-span .fr-buttons {
+        padding: 1% 14%;
+        border-radius: 10px;
+        background-color: #88a58ee6;
+    }
+}

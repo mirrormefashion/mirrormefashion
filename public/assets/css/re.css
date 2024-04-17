@@ -1,0 +1,1433 @@
+@media (min-width: 1399px) and (max-width: 1280px) {
+    .col-lg-3 .modeler-full p {
+        font-size: 12px;
+        margin: 0% auto;
+    }
+}
+
+@media (max-width: 1330px) and (min-width: 1190px) {
+    #column-center {
+        margin-top: -20%!important;
+    }
+}
+
+@media (max-width: 1279px) and (min-width: 1101px) {
+  
+    #summit .col-lg-3 {
+        height: 65vw!important;
+    }
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #go-back {
+        padding: 10px 18px !important;
+    }
+}
+
+@media (max-width: 1189px) and (min-width: 1101px) {
+    #column-center {
+        margin-top: -20%!important;
+    }
+
+}
+
+
+/*=================================================*/
+/*========> #origin #summit ht on resize <=========*/
+/*=================================================*/
+@media (max-width: 1100px) and (min-width: 1025px) {
+    #chat-form, #button-wrap {
+        width: 100%;
+        margin: 0 auto;
+        bottom: -15%;
+    }
+    #origin #sophiaChat {
+        height: 80vw!important;
+    }
+    #summit{
+        height: 85vw!important;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 925px) {
+    #summit{
+        height: 100vw!important;
+    }
+}
+
+@media (max-width: 924px) and (min-width: 850px) {
+    #summit{
+        height: 110vw!important;
+    }
+}
+
+@media (max-width: 849px) and (min-width: 701px) {
+    #summit{
+        height: 125vw!important;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 349px) {
+    #origin {
+        height: 160vw!important;
+        padding: 5%!important;
+    }
+    #summit{
+        height: 185vw!important;
+    }
+    #summit .container-fluid .row {
+        height: 100%!important;
+    }
+    #mobileDisplay2 {
+        z-index: 400;
+    }
+    #mobileDisplay2 h4 {
+        text-align: center!important;
+        color: #990000!important;
+    }
+    #mobileToolie {
+        font-size: 16px!important;
+    }
+    #controllerCenter {
+        margin-top: -30px;
+        padding-right: 0px!important; 
+        padding-left: 0px!important;
+    }
+    #controllerCenter #column-center {
+        width: 100%!important;
+        transform: scale(.8)!important;
+        margin-top: -10%!important;
+    }
+    #mobileController {
+        display: block;
+        margin-top: -50%;
+    }
+    #img-inner .feature-container {
+        width: 90%!important;
+        height: 50%!important;
+        opacity: .8!important;
+        padding: 2% 10%!important;
+    }
+    .modeller-button-wrap {
+        border: solid 2px;
+        padding: 2% 5%;
+        width: 50%;
+        background-color: #990000;
+        border-radius: 25px;
+    }
+    .modeller-button-wrap a {
+        color: #fff!important;
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 624px) and (min-width: 349px) {
+
+    #controllerCenter {
+        width: 100%!important;
+        height: 100%!important;
+        background: radial-gradient(ellipse at center, 
+            rgba(255, 255, 255, 1) 0%, 
+            rgba(255, 255, 255,  1) 47%, 
+            rgba(255, 255, 255,  1) 100%
+        )!important;
+    }
+}
+
+
+/*====>>>>>>> Mobile Layout Body Modeller <<<<<<<<<<=====*/
+        @media (max-width: 700px) and (min-width: 600px) {
+            #img-inner .feature-container {
+                margin: 90% auto 0!important;
+            }
+            label[title="Next"] {
+                right: 1%!important;
+                bottom: 71%!important;
+            }
+            .modeller-button-wrap {
+                margin: 110% auto 0!important;
+            }
+        }
+        @media (max-width: 600px) and (min-width: 500px) {
+            #img-inner .feature-container {
+                margin: 35% auto 0!important;
+            }
+            label[title="Next"] {
+                right: 1%!important;
+                bottom: 12%!important;
+            }
+            .modeller-button-wrap {
+                margin: 80% auto 0!important;
+            }
+        }
+        @media (max-width: 489px) and (min-width: 449px) {
+
+            #controllerCenter #column-center {
+                transform: scale(0.8)!important;
+                margin-left: -5%!important;
+            }
+        }
+        @media (max-width: 448px) and (min-width: 431px) {
+
+            #controllerCenter #column-center {
+                transform: scale(0.8)!important;
+                margin-left: -8%!important;
+            }
+        }
+        @media (max-width: 430px) and (min-width: 410px) {
+
+            #controllerCenter #column-center {
+                transform: scale(0.8)!important;
+                margin-left: -10%!important;
+            }
+        }
+        @media (max-width: 409px) and (min-width: 389px) {
+
+            #controllerCenter #column-center {
+                transform: scale(0.8)!important;
+                margin-left: -13%!important;
+            }
+        }
+        @media (max-width: 388px) and (min-width: 349px) {
+
+            #controllerCenter #column-center {
+                transform: scale(0.6)!important;
+                margin-left: -13%!important;
+            }
+        }
+
+
+
+
+
+/*-----> values for set screen widths <------*/
+@media (max-width: 1100px) and (min-width: 650px) {
+    #origin {
+        height: 160vw!important;
+        padding: 5%!important;
+    }
+    .chat-body {
+        height: 60vw;
+    }
+    #origin #sophiaChat {
+        margin-top: 10%!important;
+    }
+    .chat-content {
+        min-height: 60vw!important;
+    }
+    #sophiaChat,
+    .chat-part {
+        height: 100%!important;
+    }
+    .chat-part {
+        padding: 5%!important;
+    
+    }
+    .form-group,
+    .reply-box p,
+    #form-input,
+    #chat-btn {
+        font-size: 18px!important;
+    }
+    #thinkingWheel {
+        width: 55%!important;
+    }
+    #summit{
+        padding: 0!important;
+        margin: 0!important;
+        border-top: solid 2px #ccc;
+        padding-top: 3%!important;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    }
+    #modeller-button-wrap {
+        border: solid 2px #000;
+        padding: 3% 0;
+        border-radius: 15px;
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #990000;
+    }
+    #sumbit-model {
+        color: #eee; 
+    }
+    #mobileToolie {
+        padding: 1% 11%!important;
+    }
+    #mobileDisplay1 h4 {
+        text-align: center;
+        color: #990000;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 0%;
+    }
+    #controllerCenter {
+        width: 100%!important;
+    }
+    #controllerCenter #column-center {
+        width: 95%!important;
+        margin: 0 auto;
+        transform: scale(1.0);
+        margin-top: -10%;
+        height: 100%;
+    }
+    #controllerCenter #controllerMobile {
+        display: block;
+        width: 30%;
+        position: absolute;
+        right: 5%;
+    }
+    #controllerMobile {
+        width: 30%!important;
+    }
+    #controls-wrap, #mcontrols-wrap {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #dropGroup {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10%;
+    }
+    .feature-container {
+        padding: 10% 8%!important;
+        width: 100%!important;
+    }
+    .range {
+        border-top: solid 2px #fff;
+        padding-bottom: 5%;
+    }
+    .range:first-child {
+        border-top: solid 0px #b3e6aa!important;
+    }
+    .range label {
+        font-size: 18px;
+    }
+    .input.feature-val {
+        font-size: 16px!important;
+    }
+    .slider-ticks {
+        margin-bottom: 8%!important;
+    }
+}
+
+
+@media (max-width: 1085px) and (min-width: 830px) {
+
+    #chat-form, #button-wrap {
+        bottom: -30%!important;
+    }
+
+    .col5 {
+        width: 40%!important;
+    }
+
+    .col8 {
+        width: 60%!important;
+    }
+}
+
+
+
+/* body modeler sizing */
+
+@media screen and (min-width: 1299px) and (min-width: 1200px) {
+    #controllerCenter #column-center {
+        margin-top: -20%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1100px) {
+    .aiz-main-wrapper {
+        overflow-x: hidden!important;
+    }
+
+    #proceed-now {
+        width: 35%!important;
+    }
+
+    #origin #sophiaChat {
+        height: 60vw!important;
+        margin-top: 5%;
+    }
+
+    .chat-part {
+        padding: 5%!important;
+    }
+
+    #thinkingWheel {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    #summit {
+        display: block;
+        margin: 5% 10% 0 10%!important;
+        padding: 0 10%!important;
+        height: 90vw!important;
+        background: rgba(255, 255, 255, 1);
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    }
+
+    #controllerCenter {
+        width: 100%!important;
+        background: rgba(255, 255, 255, 1);
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, .1) 0%, rgba(246, 246, 246, .1) 0%, rgba(237, 237, 237, .1) 0%)!important;
+        background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, .1) 0%, rgba(246, 246, 246, .1) 47%, rgba(237, 237, 237, .1) 100%)!important;
+        background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, .1) 0%, rgba(246, 246, 246, .1) 47%, rgba(237, 237, 237, .1) 100%)!important;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, .1) 0%, rgba(246, 246, 246, .1) 0%, rgba(237, 237, 237, .1) 0%)!important;
+    }
+
+    #controllerCenter #column-center {
+        margin-top: -20%!important;
+        background: rgba(0,0,0,0.0)!important;
+        z-index: 0!important;
+    }
+
+    #mobileDisplay1 {
+        width: 100%!important;
+        margin-top: 5%!important;
+        z-index: 100!important;
+    }
+
+    #mobileToolie {
+        font-size: 16px;
+        color: #054714;
+    }
+
+    #dropGroup {
+        transform: translateX(50%);
+        height: 50px;
+        width: 50%;
+        border-radius: 25px;
+        padding: 2%;
+        font-size: 16px;
+        text-align: center;
+        background: #ccc;
+        margin-top: 2%;
+        color: #990000;        
+    }
+
+    #modeler {
+        margin-top: 0!important;
+    }
+
+    #summit .container-fluid .row {
+        position: relative;
+    }
+
+    #summit .container-fluid .row #mobileController {
+        position: absolute;
+        bottom: -190px;
+    }
+
+    #mcontrols-wrap {
+        width: 80%;
+        padding: 5% 0;
+        margin: 0 auto;
+    }
+
+    .feature-container {
+        padding: 5% 16%!important;
+        background: rgb(179, 230, 170, .6)!important;
+    }
+    .tick-slider-background, .tick-slider-progress, .tick-slider-tick-container {
+        background-color: #f8f9fa!important;
+    }
+    #mobileController #submit-model {
+        width: 70%;
+        border-radius: 100px;
+        height: 40px;
+        color: #fff;
+        background-color: #900;
+        padding: 2% 15%!important;
+        border: solid 2px #000;
+    }
+    
+    #mobileController .modeller-button-wrap {
+        margin-top: 0!important;
+    }
+    
+    #controllerCenter #column-center {
+        margin-top: -20%;
+    }
+
+    #controllerLeft, 
+    #controllerRight, 
+    #controllerCenter {
+        height: 60vw!important;
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+    #controllerCenter #column-center {
+        margin-top: -20%;
+    }
+
+    #summit {
+        padding: 0!important;
+    }
+
+    #controllerLeft, 
+    #controllerRight, 
+    #controllerCenter {
+        height: 65vw!important;
+    }
+
+    #controllerCenter #column-center {
+        margin-top: -15%;
+        height: 100%;
+    }
+ 
+}
+
+@media (max-width: 991px) and (min-width: 860px) {
+    .container, .container-md, .container-sm {
+        max-width: 830px !important;
+    }
+}
+
+
+@media screen and (max-width: 785px) and (min-width: 605px) {
+    
+    #mobileToolie {
+        font-size: 9px!important;
+    }
+
+    .range label {
+        max-width: 55%!important;
+    }
+
+    input.feature-val {
+        height: 4vw!important;
+    }
+}
+
+
+@media screen and (max-width: 605px) and (min-width: 581px) {
+
+
+    .range label {
+        max-width: 55%!important;
+    }
+
+    input.feature-val {
+        height: 4vw!important;
+    }
+}
+
+/* max-width only */
+
+@media screen and (max-width: 1030px) {
+    #user-account-page .page-inner .col-lg-4,
+    #user-account-page .page-inner .col-md-4,
+    #user-account-page .page-inner .col-xs-4 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    #user-account-page .page-inner .col-lg-8,
+    #user-account-page .page-inner .col-md-8,
+    #user-account-page .page-inner .col-xs-8 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #chat-form, #button-wrap {
+        bottom: -20%;
+    }
+    
+    footer .col-md-12 {
+        margin-top: 8%;
+    }
+
+    #footer-icons h4 {
+        font-size: 20px;
+        margin-top: 11%;
+    }
+    .chat-part {
+        margin-top: 50px;
+    }
+    .chat-content {
+        height: 90vw;
+    }
+    .ar-label, .reply-box p {
+        font-size: 14px !important;
+        line-height: 1.5;
+    }
+    #chat-bubbles {
+        height: 85vw !important;
+        max-height: 85vw !important;
+    }
+    #column-center, .col5 {
+        height: 710px!important;
+    }
+    #mshape.male {
+        margin-left: 1%;
+    }
+    #origin .display-3 {
+        font-size: 40px !important;
+    }
+    #origin h2.text-center {
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    #dialog-win {
+        height: 60vw;
+    }
+    #chat-convo {
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 870px) {
+
+    .para {
+        font-size: 1.25em;
+    }
+
+    #card-back {
+        padding-right: 45px!important;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .para {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-title {
+        font-size: 14px;
+        margin: 0;
+        padding: 4px;
+        font-weight: 400;
+    }
+
+    .navbar p:last-of-type, .mb-0 {
+        margin-bottom: 30px;
+    }
+
+    .header-menu a:first-of-type {
+        display: none;
+    }
+
+    .display-3 h1:last-of-type {
+        margin-bottom: -3vw;
+    }
+
+    .main-title h1.display-3 {
+        margin-top: 8vw;
+    }
+
+    .full-wrap .block-33 {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 100%;
+        border: none;
+    }
+
+    .well-2 {
+        margin: 0;
+    }
+
+    .well-2 h1 {
+        text-align: right;
+    }
+
+    .main-title h1 {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+
+    #dialog-win {
+        width: 39%;
+        height: 60vw;
+    }
+
+    .para {
+        text-align: right;
+        font-size: 3vw;
+        margin-top: 2.5vw;
+        color: #fff;
+        display: inline-block;
+        /* float: right; */
+        width: 100%;
+    }
+
+    #jump-to {
+        padding: 5px 10px;
+    }
+
+    .display-3 {
+        margin-bottom: -1vw!important;
+    }
+
+    #work-wrap h1 {
+        margin-top: 4%;
+    }
+
+    .col1 {
+        width: 10%;
+    }
+
+    #signup-two {
+        min-width: 95%!important;
+        margin: 0 auto!important;
+        margin-top: 5%;
+    }
+
+    #controls {
+        height: 520px;
+    }
+
+    #front-controls-full .range .slide-full {
+        margin: 3% auto;
+    }
+
+    footer .form-group {
+        width: 100%;
+    }
+
+    #dropGroup {
+        transform: translateX(96%)!important;
+        height: 30px!important;
+        width: 33%!important;
+        padding: 0%!important;
+        font-size: 13px!important;
+    }
+    #origin #sophiaChat {
+        height: 77vw!important;
+    }
+
+    .chat-content {
+        min-height: 60vw!important;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #regform label {
+        text-align: left !important;
+        display: block;
+    }
+    #regform .form-control, #form-data-left, #form-data-right {
+        width: 100% !important;
+    }
+    .profile-body-shape {
+        height: 700px !important;
+        margin-top: -100px !important;
+    }
+    .main-title .display-3 {
+        font-size: 50px !important;
+        line-height: 1;
+    }
+    .main-title h3 {
+        font-size: 24px !important;
+        margin-top: 20px;
+    }
+    #proceed-now {
+        padding: 12px 26px !important;
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 765px) { 
+    .timer-section h1 {
+        font-size: 30px;
+    }
+
+    #card-back {
+        width: 39%;
+        padding-right: 9px!important;
+    }
+
+    footer {
+        width: 100%!important;
+    }
+
+    footer .lh-normal {
+        text-align: center;
+    }
+
+    footer .container .row h4 {
+        color: #fff!important;
+    }
+
+    #footer-icons h4 {
+        font-size: 20px;
+        margin-top: 8%;
+    }
+
+    footer .container .row h4, footer .container .row h5 {
+        color: yellow !important;
+    }
+
+}
+
+@media screen and (max-width: 649px)  {
+    .aiz-main-wrapper {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+    .top {
+        height: 25px;
+    }
+    .navbar-brand {
+        display: none;
+    }
+
+    #mobile-log-wrapper {
+        background-color: #282525;
+        height: 30px;
+        border: solid 2px #282525;
+    }
+
+    #log-buttons-mobile {
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    .signup-button-mobile {
+        color: #980;
+        padding: 6px 6%;
+        /*padding: 8px 5%;*/
+        font-size: 10px;
+        background-color: #000;
+    }
+
+    .nav-mob a {
+        color: #ffff00;
+        padding: 6px 6%;
+        font-size: 11px;
+      }
+
+      #heading-alpha {
+        margin-left: 3% !important;
+      }
+
+    #login-button-mobile a:first-of-type {
+        margin-left: 34%;
+    }
+
+
+    /* Homepage Art */
+
+    #controller-mobile {
+        position: absolute;
+        top: 158px;
+        width: 45%;
+        padding: 10% 4%;
+        z-index: 1500;
+    }
+
+    #controller-mobile h3 {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    #controller-mobile p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #features-wrapper {
+        height: 484px;
+        overflow-y: auto;
+    }
+
+    .feature-container {
+        background: rgba(0, 151, 19, 0.1);
+    }
+
+    .feature-container span:first-of-type {
+        color: #990000;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0;
+        margin-left: 0px;
+        margin: 0px;
+    }
+
+    input[type=range] {
+        -webkit-appearance: none;
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        background-color: non;
+        background-color: #990000b5;
+    }
+    .range label {
+        max-width: 55%;
+        font-size: 14px;
+    }
+
+    input.feature-val {
+        float: right;
+        width: 46%;
+        font-weight: 600;
+        border: solid 3px #a3a6a8;
+        height: 4.25vw;
+        color: #333;
+        margin: 0 1vw 0.5vw;
+        border-radius: 5px;
+    }
+
+
+    #button-wrap {
+        width: 100%;
+        position: absolute;
+        right: 2%;
+    }
+
+
+    #the-three-steps .column p {
+        font-size: 14px;
+    }
+
+    .col8 {
+        float: none!important;
+        height: 85vw;
+        width: 100%!important;
+        min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .display-3 {
+        margin-bottom: -1.5vw!important;
+        color: #990000;
+    }
+    
+    #dialog-win {
+        height: 82vw;
+        width: 100%!important;
+        margin: 3% 10%;
+        padding: 2vw 3vw;
+        border-radius: 15px;
+    }
+
+    #chat-form {
+        width: 94%;
+    }
+
+    .reply-box {
+        padding: 12px 20px;
+    }
+
+    .reply-box p {
+        font-size: 2vw;
+    }
+
+
+
+    #legend {
+        margin: 0;
+    }
+
+    #fb-span .fr-buttons {
+        padding: 1% 14%;
+        border-radius: 10px;
+        background-color: #88a58ee6;
+    }
+
+    .col5 {
+        width: 40%;
+        right: 15px;
+        top: 93px!important;
+        background: none!important;
+        height: 570px!important;
+    }
+
+    #modeler-responsive {
+        position: relative;
+        float: none!important;
+        display: block!important;
+        width: 100%;
+        height: 135vw;
+        margin: 0;
+        padding-top: 6vw;
+    }  
+
+    #chat-sd-cont {
+        font-size: 3vw;
+    }
+
+    .btn1 {
+        height: 5.25vw;
+    }
+
+    .chat-content {
+        min-height: 63vw;
+    }
+
+    .front-controls-full .range .slide-full {
+        height: 10px;
+    }
+
+    #help-blurb {
+        font-size: 10px;
+    }
+
+    .range label {
+        margin-bottom: -1.5rem;       
+    }
+
+    #front-controls-full .range label {
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    #main-well .well-2 h1 {
+        font-size: 6vw;
+    }
+
+    .display-3 {
+        font-size: 8.5vw;
+    }
+
+    #work-wrap h2 {
+        font-size: 5.25vw;
+        margin-top: .25vw;
+    }
+
+    #chatintro-span {
+        display: block!important;
+    }
+
+    #controls {
+        padding: 0 1.25vw;
+        overflow-y: scroll;
+    }
+
+    #form-wrapper {
+        padding-left: 0!important;
+        margin: 0!important;
+    }
+    
+
+    .col-md-2 {
+        width: 39vw;
+        position: absolute;
+        right: 25px;
+        top: 200px;
+        z-index: 500;
+    }
+
+    #front-controls-mobile,
+    #col-4-2,
+    #col-4-3 {
+        float:left;
+    }
+
+    #modeler-responsive .front-controller .model-label {
+         width: 75%!important;       
+        color: #333;
+        font-size: 2.25vw;
+        font-weight: 400;
+        text-align: left;
+        float: right;
+        text-shadow: 0px 1px #FFF;
+    }
+
+    #col-4-2 button {
+        border: solid 5px #cc8800;
+        border-radius: 50%;
+        margin: 2px 2px;
+        padding: 8px;
+        background-color: #990000;
+    }
+
+    #front-controls-mobile button.previous {
+        float: left;
+        margin: 2px 2px;
+        padding: 14px;
+        background-color: #fc7703;
+        background-image: linear-gradient(#fc7703, #fc4e03);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px #aaa, inset 0 0px 3px #fff;
+        
+    }
+
+    .previous:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+}
+
+@media screen and (max-width: 622px) {
+
+    .nav-mob a.icon {
+        float: right;
+        display: block;
+    }
+    #legend {
+        margin: 0;
+    }
+
+    #features-wrapper {
+        margin-top: 175px;
+    }
+
+    .feature-container {
+        background: none;
+        margin: 10px 0;
+        padding: 1em;
+        border: none;
+        background-color: none;
+        box-shadow: none;
+    }
+
+    #features-wrapper {
+        background: rgb(0 151 19 / 35%);
+        border-radius: 14px;
+    }
+
+    #legend p {
+        color: #1e6112;
+        font-size: 13px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #the-three-steps h1 {
+        font-size: 30px !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav-mob.responsive {position: relative;}
+    .nav-mob.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-mob.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-title {
+        font-size: 10px !important;
+        text-align: left !important;
+    }
+    #policy-blurb {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    #legend {
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    #proceed-now {
+        width: 75%!important;
+    }
+
+    .ar-label, .reply-box p {
+        font-size: 10px!important;
+    }
+
+    input.feature-val {
+        height: 4.25vw!important;
+    }
+
+    .range label {
+        font-size: 12px!important;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    .logo img {
+        width: 30%;
+    }
+
+    #log-buttons-mobile {
+        width: 50%;
+    }
+
+    footer .col-md-12 p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #meat .col-lg-8 {
+        margin-bottom: 10%;
+    }
+
+    #meat .col-lg-4 {
+        height: 640px;    }
+
+    .chat-part {
+        height: 600px;
+    }
+
+    .chat-dialog {
+        height: 100%;
+    }
+
+    .chat-body {
+        height: 85%!important;
+    }
+
+
+
+    .col5 {
+        height: 535px!important;
+    }
+
+    #modeler-full {
+        transition: none; 
+        box-shadow: none; 
+        background-color:rgba(255, 255, 255, 0); 
+    }
+
+    #summit #card-back {
+        width: 45%!important;
+        height: 450px!important;
+        right: 0px;
+        top: 155px!important;
+    }
+
+    #legend {
+        border-bottom: solid 2px;
+    }
+
+    #legend p {
+        margin-bottom: 20px;
+    }
+
+
+    #controls {
+        height: 448px;
+    }
+    
+    input.feature-val {
+        max-width: 99%;
+        margin: 0;
+        font-size: 12px;
+        height: 23px !important;
+    }
+
+    .range label {
+        font-size: 10px;
+    }
+
+    #chat-form, #button-wrap {
+        bottom: 3%!important;
+    }
+
+    #shape-submit {
+        position: absolute;
+        right: 70%;
+        bottom: 6%;
+        width: 82%;
+        height: 33px;
+        padding: 4%;
+        font-size: 12px;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #900;
+    }
+
+    .logo img {
+        width: 170px !important;
+    }
+    .mean-container a.meanmenu-reveal {
+        margin-top: -50px;
+    }
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+    #regform h1:first-of-type {
+        font-size: 2.25rem;
+    }
+
+
+    .toolietext {
+        font-size: 10px;
+    }
+
+    #front-controls-full .range {
+        padding: 4%!important;
+        margin: 4% 0!important;
+    }
+
+    #front-controls-full .range label {
+        font-size: 11px;
+    }    
+
+    #shape-submit {
+        position: absolute;
+        right: 10%;
+        bottom: 0%;
+    }
+    .profile-body-shape {
+        margin-left: -35px;
+    }
+    #log-buttons-mobile {
+        width: 60%;
+    }
+
+    button.previous:active {
+        margin: 2px 2px;
+        padding: 14px;
+        background-color: #fc7703;
+        background-image: linear-gradient(#fc7703, #fc4e03);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px #aaa, inset 0 0px 3px #fff;
+    }
+
+    #front-controls-mobile button.previous {
+        width: 12%;
+        padding: 10px;
+    }
+
+    #modeler-responsive .front-controller .model-label {
+        width: 80%!important;
+    }
+
+
+
+    .col-md-2 {
+        width: 60vw;
+        position: absolute;
+        right: -10px;
+        top: 190px;
+        z-index: 500;
+        }
+    
+    #front-controls-mobile h5 {
+        font-size: 3.5vw;
+    }
+
+    
+    .full-wrap .block-33 {
+        height: 100%;
+        right: 0vw;
+    } 
+    
+    #main-well .well-2 .para {
+        width: 100%;
+        margin-top: 0.5vw;
+    }   
+
+    .main-title .display-3 {
+        font-size: 8vw;
+        line-height: 45px;
+    }
+
+    .main-title h1:nth-child(2) {
+        color: #a94442;
+        font-size: 6vw;
+        margin-top: -2vw;
+    }
+    .well-2 p:nth-child(1) {        
+        font-size: 7vw!important;
+    }
+
+    .well-2 p:nth-child(2) {        
+        font-size: 5.5vw!important;
+    }
+
+    .well-2 p:nth-child(3) {        
+        font-size: 1em!important;
+    }
+    #chat-intro-span {
+        font-size: 4.5vw;
+    }
+
+    #sophia {
+        top: 0px;
+        left: 0px;
+        width: 22%;
+    }
+
+    #dialog-win {
+        height: 105vw;
+    }
+
+    #form-wrapper {
+        padding: 0!important;
+    }
+
+    #signup-two h1 {
+        font-size: 10vw;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .well-2 p:nth-child(2) {
+        font-size: 3.5vw !important;
+    }
+    .profile-body-shape {
+        margin-left: -50px;
+    }
+    ul.social-icons.social .list-inline-item:not(:last-child) {
+        margin-right: 0.1rem !important;
+    }
+    #log-buttons-mobile {
+        width: 70%;
+    }
+
+}
+
+
+
+
+
+

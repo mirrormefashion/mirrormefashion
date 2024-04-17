@@ -1,0 +1,215 @@
+﻿
+.chat {
+    height: calc(100vh - 180px);
+}
+
+.chat-body .answer {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.bg-white {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+}
+
+.friend-list {
+    list-style: none;
+}
+
+    .friend-list li {
+        border-bottom: 1px solid #eecbee;
+        width: 100%;
+    }
+
+        .friend-list li a img {
+            float: left;
+            height: 35px;
+            margin-right: 0;
+            width: 35px;
+        }
+
+        .friend-list li a {
+            position: relative;
+            display: block;
+            /*padding: 8px 10px;*/
+            transition: all .2s ease;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+            -o-transition: all .2s ease;
+        }
+
+        .friend-list li.active a {
+            background-color: #eaeaea;
+        }
+
+        .friend-list li a .friend-name {
+            color: #222;
+            padding: 0 55px;
+            font-weight: 600;
+        }
+
+
+
+        .friend-list li a .last-message {
+            width: 65%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 0 19px;
+            color: #222;
+        }
+
+        .friend-list li a .time {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+        }
+
+small, .small {
+    font-size: 85%;
+}
+
+.friend-list li a .chat-alert {
+    position: absolute;
+    right: 8px;
+    top: 27px;
+    font-size: 10px;
+    padding: 3px 5px;
+}
+
+.chat-message {
+    padding: 15px 20px 115px;
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+}
+
+.chat-message {
+    background: #f9f9f9;
+}
+
+.chat li img {
+    width: 45px;
+    height: 45px;
+   /* border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;*/
+}
+
+img {
+    max-width: 100%;
+}
+
+.chat-body {
+    padding-bottom: 20px;
+}
+
+.chat li.left .chat-body {
+    margin-left: 70px;
+    background-color: #fff;
+}
+
+.chat li .chat-body {
+    position: relative;
+    font-size: 14px;
+    padding: 4px 10px 10px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+    .chat li .chat-body .header {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f1f5fc;
+    }
+
+    .chat li .chat-body p {
+        margin: 0;
+    }
+
+.chat li.left .chat-body:before {
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    display: inline-block;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-left: 1px solid #ddd0ff;
+    border-top: 1px solid #c5c5c5;
+    content: '';
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.chat li.right .chat-body:before {
+    position: absolute;
+    top: 10px;
+    right: -8px;
+    display: inline-block;
+    background: #eaeaea;
+    width: 16px;
+    height: 16px;
+    border-right: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    content: '';
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.chat-list li {
+    margin: 3px 0 !important;
+    list-style: none;
+}
+
+.chat li.right .chat-body {
+    margin-right: 70px;
+    background-color: #eaeaea;
+}
+
+.chat-box {
+    left: 444px;
+    right: 0;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.primary-font {
+    color: #1A59B4;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+.heading1 {
+    background: #80C34F;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.heading {
+    background: #1A59B4;
+    color: #fff;
+    padding: 6px 10px;
+}

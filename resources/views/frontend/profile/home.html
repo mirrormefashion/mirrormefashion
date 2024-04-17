@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>horizontal scroll</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <header class="header" id="homePageHeader">
+        <div class="header_top" role="navigation">
+            <div class="empty_div"></div>
+            <div class="header_top_tittle">
+                <p>MIRROR ME FASHION <sup>BETA</sup></p>
+            </div>
+            <div class="header_top_action">
+                <a href="#">Log In</a>
+                <a href="#">Join Now</a>
+            </div>
+        </div>
+        <div class="header_middle" role="navigation">
+            <div class="logo">
+                <a href=""><img src="images/logo.png" alt="Mirror Me Fashion Logo"></a>
+            </div>
+            <div class="socail_link">
+                <ul class="social_icons social">
+                    <li class="item">
+                        <a class="facebook" rel="noopener noreferrer" href="https://www.facebook.com/mirrormefashion">
+                            <svg height="16" width="10" fill="#990000" viewBox="0 0 320 512">
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg></a>
+                    </li>
+                    <li class="item"> <a class="twitter" rel="noopener noreferrer" href="https://www.twitter.com/mirrormefashion"><svg height="16"
+                                fill="#990000" width="16" viewBox="0 0 512 512">
+                                <path
+                                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                            </svg></a> </li>
+                    <li class="item"> <a class="linkedin" rel="noopener noreferrer" href="https://www.linkedin.com/company/mirrormefashion"><svg
+                                fill="#990000" height="16" width="14" viewBox="0 0 448 512">
+                                <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                            </svg></a> </li>
+                    <li class="item"> <a class="instagram" rel="noopener noreferrer" href="https://www.instagram.com/mirrormefashion/"><svg
+                                fill="#990000" height="16" width="14" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a> </li>
+                </ul>
+            </div>
+            <div id="navToggle" class="nav_toggle" onclick="mainNavBarInit()">
+
+                <svg viewBox="0 0 50 50" width="30px" height="30px" fill="white"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+            </div>
+        </div>
+
+        <nav class="main_menu">
+            <ul class="menu_container" id="homePageMenu">
+                <li>
+                    <a href="http://localhost/mirrormefashion">Home</a>
+                </li>
+                <li>
+                    <a href="http://localhost/mirrormefashion/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="http://localhost/mirrormefashion/about">About</a>
+                </li>
+                <li>
+                    <a href="http://localhost/mirrormefashion/shop">Shop</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main_container" id="mainContainer">
+        <div class="main_container_wrapper">
+            <div class="main_container_inner">
+                <div class="section heru_section" style=" background:#990000  url('images/heru.jpg') no-repeat; background-size: cover;">
+                    <div class="description">
+                        <h1>Meet the Only Virtual Fashion Stylist Powered by AI</h1>
+                        <h2>Find Fashion that Fits and Flatters</h2>
+                    </div>
+                </div>
+                <section class="section" style="background: #990000 url('images/section_1.jpeg') no-repeat; background-size: cover;">
+                    <div class="section_one">
+                        <div></div>
+                        <div class="section_one_wrapper">
+                            <h1><u class="free">Free</u> styling help for <u>all</u> body types</h1>
+                            <p class="title"> Welcome to Mirror Me Fashion Beta!</p>
+                            <p>➯ <span>Get Free & Instant</span> Fashion Advice from the World’s First and Only <a href="">Virtual Fashion Stylist</a></p>
+                            <p>➯ Get in early by joining as a Fashion Professional </p>
+                            <p>➯ Grow followers, monetize, sell products, expand your fashion business</p>
+                            <div class="action">
+                                <button onclick="goToNextSection('#sopiaChatSection')">I’m a Shopper</button>
+                                <button onclick="goToNextSection('#FashionProfessionalSection')">I’m a Fashion Professional</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="FashionProfessionalSection" style="background: #990000 url('images/section_2.png') no-repeat; background-size: cover; display: none;">
+                    <div class="section_two">
+                        <div class="left">
+                            <div class="tittle">
+                                <h1>Mirror Me Fashion</h1>
+                                <h3>Discover Your Niche</h3>
+                            </div>
+                            <ul>
+                                <li>➯ Powerful AI technology</li>
+                                <li>➯Streamlined services </li>
+                                <li>➯Increase your sales</li>
+                                <li>➯Monetize your followin</li>
+                            </ul>
+                            <div class="learn_more"> <button>Learn more...</button></div>
+                        </div>
+                        <div class="right">
+                            <h1>Welcome to Mirror Me Fashion
+                            </h1>
+                            <p>What type of Professional are you?
+                            </p>
+                            <div class="right_container">
+
+
+                                <select name="user_type" id="selectedUserType">
+                                        <option value="">Select user type</option>
+                                        <option value="retailer">I’m a Fashion Retailer</option>
+                                        <option value="influencer">I’m a Fashion Influencer</option>
+                                        <option value="advertiser">I’m a Fashion Advertiser</option>
+                                        <option value="shopper">I’m a Fashion Shopper</option>
+                                    </select>
+
+                                <div class="registration_btn">
+                                    <button type="button" onclick="userRegisterChecker(event)">Complete Registration</button>
+                                </div>
+
+                                <div class="agree_btn">
+                                    <input type="checkbox" id="agreeBtn"> <label for="agreeBtn">I agree that I am above 18 years old</label>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="sopiaChatSection" style="display: none;">
+                    <div class="section_three">
+                        <div class="left">
+                            <div class="tittle">
+                                <h1>ShapeMe® Body Modeler</h1>
+                                <h2>by Mirror Me Fashion</h2>
+                            </div>
+                            <div class="models"><img src="images/models.png" alt="Three 3D female body shapes"></div>
+                        </div>
+                        <div class="right">
+                            <div class="chat_box">
+                                <div class="chat_box_main">
+                                    <div class="chat_box_header">
+                                        <div class="sophia_pic">
+                                            <img src="images/sophia.png" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div id="chatBody" class="chat_body" style="color: #990000;">
+                                        <div class="talk_bubble">
+                                            Hi there guest visitor! I’m Sophia, your Virtual Fashion Stylist! Are you female, male or non-binary?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat_box_footer">
+                                    <input type="text" id="userInput" placeholder="Enter your response here">
+                                    <button id="sendBtn">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="bodyModelerSection" style="display: flex;">
+
+                    <div class="section_four">
+                        <div class="modeler_controller">
+                            <p>Move the sliders of each body feature to reshape the model. Click "Body Rear" to change the rear side of your model.</p>
+
+                            <div class="modelers_group_options d-none md_block">
+                                <div class="collapsible" onclick="toggleCollapse()">
+                                    <div class="plus" style="display: none;">
+                                        +
+                                    </div>
+                                    <div class="minus">
+                                        -
+                                    </div>
+
+                                </div>
+                                <select name="" id="" oninput="toggleControllers(this)">
+                                    <option value="head_and_neck">Head/Neck</option>
+                                    <option value="shoulder_and_arm">Shoulders/Arm</option>
+                                    <option value="breast_and_torso">Breast/Torso</option>
+                                    <option value="leg_and_hip">Legs/Hips</option>
+                                   </select>
+                            </div>
+                            <div class="controls" style="display: block;">
+                                <div class="front-controls-full m-modeller">
+
+                                    <div class="head_and_neck">
+                                        <!-- Head Group -->
+                                        <div class="feature_group_wrap" id="head-shape">
+                                            <label for="slider-head-shape">Head Shape:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_8" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-head-shape" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_8" name="head_shape_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="head-size">
+                                            <label for="slider-head-size">Head Size:</label>
+                                            <div class="tick-slider">
+
+                                                <div id="sliderTicks_9" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-head-size" class="tick-slider-input slide-full topmost" type="range" min="0" max="4" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_9" name="head_size_val" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Neck Group -->
+                                        <div class="feature_group_wrap" id="neck-height">
+                                            <label for="slider-neck-height">Neck Height:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_11" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-neck-height" class="tick-slider-input slide-full topmost" type="range" min="0" max="4" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_11" name="neck_height_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="neck-width">
+
+                                            <label for="name">Neck Width:</label>
+
+                                            <div class="tick-slider">
+                                                <div class="tick-slider-value-container">
+
+                                                    <div id="sliderTicks_12" class="tick-slider-tick-container">
+                                                        <span class="tick-slider-tick"></span>
+                                                        <span class="tick-slider-tick"></span>
+                                                        <span class="tick-slider-tick"></span>
+                                                        <span class="tick-slider-tick"></span>
+                                                    </div>
+                                                    <input id="slider-neck-width" class="tick-slider-input slide-full topmost" type="range" min="0" max="3" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_12" name="neck_width_val" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shoulder_and_arm d_none_md">
+                                        <!-- Shoulders Group -->
+                                        <div class="feature_group_wrap" id="shoulder-height">
+                                            <label for="slider-shoulder-height">Shoulder Height:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_13" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-shoulder-height" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_13" name="shoulder_height_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="shoulder-width">
+                                            <label for="slider-shoulder-width">Shoulder width:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_14" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-shoulder-width" class="tick-slider-input slide-full topmost" type="range" min="0" max="8" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_14" name="shoulder_width_val" />
+                                            </div>
+                                        </div>
+                                        <!--   Arm  group -->
+                                        <div class="feature_group_wrap" id="arm-size">
+                                            <label for="slider-arm-size">Arm Size:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_15" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-arm-size" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_15" name="arm_size_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="arm-length">
+                                            <label for="slider-arm-length">Arm Length:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_10" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-arm-length" class="tick-slider-input slide-full topmost" type="range" min="0" max="1" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_10" name="arm_length_val" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="breast_and_torso d_none_md">
+                                        <div class="feature_group_wrap" id="breast-size">
+                                            <label for="slider-breast-size">Breast Size:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_1" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-breast-size" class="tick-slider-input slide-full topmost" type="range" min="0" max="8" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_1" name="breast_shape_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="stomach-shape">
+                                            <label for="slider-stomach-shape">Stomach Shape:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_2" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-stomach-shape" class="tick-slider-input slide-full topmost" type="range" min="0" max="4" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_2" name="stomach_shape_val" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Torso Group -->
+                                        <div class="feature_group_wrap" id="torso-height">
+                                            <label for="slider-torso-height">Torso Height:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_3" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-torso-height" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_3" name="torso_height_val" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="leg_and_hip d_none_md">
+                                        <!-- Leg Group -->
+                                        <div class="feature_group_wrap" id="leg-size">
+                                            <label for="slider-leg-size">Leg Size:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_4" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-leg-size" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_4" name="leg_size_val" />
+                                            </div>
+                                        </div>
+                                        <div class="feature_group_wrap" id="crotch-height">
+                                            <label for="slider-crotch-height">Crotch Height:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_5" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-crotch-height" class="tick-slider-input slide-full topmost" type="range" min="0" max="1" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_5" name="crotch_height_val" />
+                                            </div>
+                                        </div>
+                                        <!-- Hip Group -->
+                                        <div class="feature_group_wrap" id="hip-size">
+                                            <label for="slider-hip-size">Hip Size:</label>
+                                            <div class="tick-slider">
+                                                <div id="sliderTicks_6" class="tick-slider-tick-container">
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                    <span class="tick-slider-tick"></span>
+                                                </div>
+                                                <input id="slider-hip-size" class="tick-slider-input slide-full topmost" type="range" min="0" max="2" step="1" value="0" data-tick-step="1" data-tick-id="sliderTicks_6" name="hip_size_val" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="body_modeler_action_btn">
+                                        <button style="cursor: pointer; padding: 10px;">Body Rear</button>
+                                        <button style="cursor: pointer; padding: 10px;" onclick="goToRegisterSection('#registationSection')">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modeler_container">
+
+
+                            <div class="body_modeler modeler-heading">
+                                <h1>ShapeMe® Body Modeler</h1>
+                                <h5>by Mirror Me Fashion</h5>
+                                <div class="body_modeler_canvases">
+                                    <!-- Repeated canvas structure, use a loop or function to generate -->
+                                    <canvas id="canvas_head" class="canvas_head"></canvas>
+                                    <canvas id="canvas_neck" class="canvas_neck"></canvas>
+                                    <canvas id="canvas_breast" class="canvas_breast"></canvas>
+                                    <canvas id="canvas_shoulders" class="canvas_shoulders"></canvas>
+                                    <canvas id="canvas_stomach" class="canvas_stomach"></canvas>
+                                    <canvas id="canvas_legs" class="canvas_legs"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="section" id="registationSection" style="display: none;">
+
+                    <div class="section_five">
+                        <div class="header_content">
+                            <h1>Mirror Me Fashion</h1>
+                            <p>Complete the missing fields to create your new account</p>
+                        </div>
+                        <form action="">
+                            <div class="user_register_form" id="userRegisterForm">
+                                <div class="left">
+                                    <div class="form_group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" value="">
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="email">Email address</label>
+                                        <input type="text" name="email" id="email" value="">
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="password">Password</label>
+                                        <input type="text" name="password" id="password" value="">
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="password_confirmation">Password Confirmation</label>
+                                        <input type="text" name="password_confirmation" id="password_confirmation" value="">
+                                    </div>
+
+                                </div>
+                                <div class="right">
+                                    <div class="right_of_left">
+                                        <div class="form_group">
+                                            <label for="bust">Bust</label>
+                                            <input type="text" name="bust" id="bust" value="">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="shoe_size">Shoe Size</label>
+                                            <input type="text" name="shoe_size" id="shoe_size" value="">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="weight">Weight</label>
+                                            <input type="text" name="weight" id="weight" value="">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="height">Height</label>
+                                            <input type="text" name="height" id="height" value="">
+                                        </div>
+                                    </div>
+                                    <div class="right_of_rigth">
+                                        <div class="form_group">
+                                            <label for="bmi">BMI</label>
+                                            <input type="text" name="bmi" id="bmi" value="">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="age_range">Age</label>
+                                            <input type="text" name="age_range" id="age_range" value="">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="gender">Gender</label>
+                                            <div id="gender" class="gender" id="gender">
+                                                <input type="radio" name="gender" id="female" value="female">
+                                                <label class="" for="female">
+                                                    Female
+                                                </label>
+
+                                                <input type="radio" name="gender" id="male" value="male">
+                                                <label class="" for="male">
+                                                    Male
+                                                </label>
+
+                                                <input type="radio" name="gender" id="non-binary" value="male">
+                                                <label class="" for="on-binary">
+                                                    Non-Binary
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="agree_btn">
+                                <input type="checkbox" id="agreeBtn"> <label for="agreeBtn">By signing up to Mirror Me Fashion you agree to our Terms, Conditions and Cookies Policy.</label>
+                                <div>
+                                    <button type="submit" class="user_register_btn">Joing Now</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </section>
+                <section class="section" id="advertiserSection" style="background: #990000 url('images/section_6.jpeg') no-repeat; background-size: cover; display: none;">
+                    <div class="section_six">
+                        <div class="left">
+                            <div class="content">
+                                <h1>Mirror Me Fashion Ad Program</h1>
+                                <p>Mirror Me Fashion is on track to reach 1.5M active users. Join today as an Early Adopter at a steep discounts while it lasts.</p>
+                                <p> Early Adopter discount Access tens of thousands of active users Display your ads via the Virtual Fashion Stylist</p>
+                            </div>
+                            <div class="learn_more"> <a href="">Learn more...</a></div>
+                        </div>
+                        <div class="right">
+                            <h1>
+                                Tell Us About
+
+                            </h1>
+                            <h1> Your Business</h1>
+
+                            <form action="" class="registation_form">
+                                <input type="text" placeholder="Company Name">
+                                <input type="text" placeholder="Email address">
+                                <input type="text" placeholder="Describe the product or service you want to advertise">
+                                <button type="submit">Complete Registration</button>
+                                <div class="agree_btn">
+                                    <input type="checkbox" id="adagreeBtn"> <label for="adagreeBtn">I agree to the terms & conditions </label>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="retailerSection" style="display: none;">
+
+                    <div class="section_seven">
+                        <form class="" action="http://localhost/mirrormefashion/shops" method="POST" enctype="multipart/form-data">
+                            <div class="retailer_registration_form">
+                                <div class="personal_info">
+                                    <div>
+                                        <h1>Personal Info</h1>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your name <span class="text-primary">*</span></label>
+                                        <input type="text" value="" placeholder="Name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your Email <span class="text-primary">*</span></label>
+                                        <input type="email" value="" placeholder="Email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your Password <span class="text-primary">*</span></label>
+                                        <input type="password" placeholder="password" name="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Repeat Password <span class="text-primary">*</span></label>
+                                        <input type="password" placeholder="Confirm Password" name="password_confirmation">
+                                    </div>
+                                </div>
+
+                                <div class="shop_info">
+                                    <div class="">
+                                        <h1>Basic Info</h1>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="form-group">
+                                            <label>Shop Name <span class="text-primary">*</span></label>
+                                            <input type="text" placeholder="Shop Name" name="name" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Address <span class="text-primary">*</span></label>
+                                            <input type="text" placeholder="Address" name="address" required="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text_right">
+                                <button type="submit" class="retailer_register_btn">Register Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script>
+        initializeHorizontalScroll()
+        bodyModelerInit()
+    </script>
+
+</body>
+
+</html>

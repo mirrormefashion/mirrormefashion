@@ -1,0 +1,6 @@
+custom style.css .form-group small {
+    font-size: 20px;
+    color: #900;
+}
+app.blade.php  
+ <script src="{{ static_asset('assets/js/formvalidate.js') }}"></script>

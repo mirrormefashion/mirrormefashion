@@ -1,0 +1,568 @@
+<div style="display:none">
+<img id="image-map" src="{{ static_asset('assets/img/overlay.png') }}" usemap="#modeler-map">
+<map name="modeler-wrap">
+  <area shape="rect" coords="0,0,500,90" alt="Head" onclick="headRange()">
+  <area shape="rect" coords="0,90,500,170" alt="Neck" onclick="neckRange()">
+  <area shape="rect" coords="0,170,250,300" alt="Shoulders" onclick="shoulderRange()">
+  <area shape="circle" coords="250,350,100" alt="Torso" onclick="stomachRange()">
+  <area shape="rect" coords="0,300,500,700" alt="Legs" onclick="legRange()">
+</map>								
+</div>  
+  
+let sliderHeadSize = document.getElementById("#slider-head-size");
+let sliderHeadShape = document.getElementById("#slider-head-shape");  
+let sliderNeckShape = document.getElementById("#slider-neck-shape");
+let sliderNeckHt = document.getElementById("#slider-neck-height");
+let sliderNeckWt = document.getElementById("#slider-neck-width");
+let sliderShoulderWt = document.getElementById("#slider-shoulder-width"); 
+let sliderShoulderHt = document.getElementById("#slider-shoulder-height");
+let sliderArm = document.getElementById("#slider-arm-size"); 
+let sliderBreasts = document.getElementById("#slider-breasts-shape"); 
+let sliderStomach = document.getElementById("#slider-stomach-shape");
+let sliderLegs = document.getElementById("#slider-leg-size"); 
+let sliderHips = document.getElementById("#slider-hip-size"); 
+let sliderBottom = document.getElementById("#slider-bottom-shape");  
+
+  if (slideValShoulderHt >= 2) {
+      if (slideValShoulderHt == 2) {
+        femaleNeck.style.bottom = "-24px";
+      } else if (slideValShoulderHt >= 3) {
+
+        femaleNeck.style.bottom = "-26px";
+
+        if (slideValNeckShape == 1) {
+          femaleNeck.style.bottom = "-28px";
+        } else {          
+          femaleNeck.style.bottom = "-26px";
+        }
+      } else {
+        femaleNeck.style.bottom = "-20px";
+      }
+    } else {
+      if (slideValShoulderHt == 1) {
+        femaleNeck.style.bottom = "-22px";
+      } else {
+        femaleNeck.style.bottom = "-20px";
+      }
+    }
+
+    if (slideValShoulderHt == 0) {
+        femaleNeck.style.bottom = "-22px";
+      } else if (slideValShoulderHt == 1) {
+             if (slideValNeckWt == 4) {
+          femaleNeck.style.bottom = "-24px";
+        } else {
+          femaleNeck.style.bottom = "-22px";
+        }
+      } else if (slideValShoulderHt == 2) {
+        femaleNeck.style.bottom = "-24px";
+      } else if (slideValShoulderHt == 3) {
+        femaleNeck.style.bottom = "-26px";
+        if (slideValShoulderWt >= 5) {
+          femaleNeck.style.bottom = "-24px";
+        } else {
+          femaleNeck.style.bottom = "-26px";
+        }
+      } else { //neck height == 4
+        femaleNeck.style.bottom = "-24px";      
+      }
+
+      if(slideValNeckShape == 1) {
+        if (slideValShoulderHt == 1) {
+          femaleNeck.style.bottom = "-24px";
+        } 
+      }
+
+
+//skinny backside      
+function recBackside() {
+    let slideValShoulderWt = document.getElementById("slider-shoulder-width").value;  
+    let slideValShoulderHt = document.getElementById("slider-shoulder-height").value;
+    let slideValArm = document.getElementById("slider-arm-size").value;
+    let slideValStomach = document.getElementById("slider-stomach-shape").value;
+    var slideValLegs = document.getElementById("slider-leg-size").value;
+    let slideValHips = document.getElementById("slider-hip-size").value;
+    let slideValBottom = document.getElementById("slider-bottom-shape").value;  
+    o_ypos = (-269 * slideValStomach);
+    o_xpos = (-481 * slideValShoulderWt); 
+    var legs_pos = femaleLegs.style.backgroundPosition;
+    var splitlegs = legs_pos.split(" ");
+    l = splitlegs[0];
+    z_xpos = parseInt(l);
+    yrec = Math.floor(slideValShoulderWt/3) * -447;
+    a_xpos = (-481 * slideValLegs) + (-2405 * slideValHips);
+    a_ypos = (-1341 * slideValBottom) + yrec;
+    y = Math.floor(slideValShoulderHt/3);
+    x = Math.ceil(slideValArm/3);
+    ypos =  (-237 * slideValShoulderHt) + (-1185 * slideValArm);
+    rypos = (-243 * y) + (-729 * x); 
+    femaleBacks.style.backgroundPosition = `${o_xpos}px ${o_ypos}px`; 
+    femaleBottoms.style.backgroundPosition = `${a_xpos}px ${a_ypos}px`;
+  
+    if (slideValStomach == 0) {
+      o_xpos = -4329 + o_xpos;
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else {
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    }
+  }
+    
+
+  y = Math.floor(slideValShoulderHt/3);
+    
+  if (slideValArm <= 2 ) {
+    ypos = 0;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+
+  } else if (slideValArm >= 3 && slideValArm <= 4) {
+    ypos = -729;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+
+  } else if (slideValArm == 5) {
+    ypos = -1458;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+  }
+
+  //average backside
+  function recBackside() {
+    let slideValShoulderWt = document.getElementById("slider-shoulder-width").value;  
+    let slideValShoulderHt = document.getElementById("slider-shoulder-height").value;
+    let slideValArm = document.getElementById("slider-arm-size").value;
+    let slideValBreasts = document.getElementById("slider-breasts-shape").value; 
+    let slideValStomach = document.getElementById("slider-stomach-shape").value;
+    var slideValLegs = document.getElementById("slider-leg-size").value;
+    let slideValHips = document.getElementById("slider-hip-size").value;
+    let slideValBottom = document.getElementById("slider-bottom-shape").value;  
+    let slideValNeckWt = document.getElementById("slider-neck-width").value;  
+    let slideValNeckShape = document.getElementById("slider-neck-shape").value;  
+    o_ypos = (-250 * slideValStomach);
+    o_xpos = (-481 * slideValShoulderWt); 
+    var legs_pos = femaleLegs.style.backgroundPosition;
+    var splitlegs = legs_pos.split(" ");
+    l = splitlegs[0];
+    z_xpos = parseInt(l);
+    yrec = Math.floor(slideValShoulderWt/3) * -504;
+    a_xpos = (-481 * slideValLegs) + (-2405 * slideValHips);
+    a_ypos = (-1512 * slideValBottom) + yrec;
+    y = Math.floor(slideValArm/2);
+    x = Math.floor(slideValShoulderHt/2);
+    rypos = (-235 * x) + (-705 * y);  
+    rz_xpos = (-481 * slideValLegs) + (-2405 * slideValHips);
+    rz_ypos = (-504 * slideValShoulderWt) + (-4536 * slideValBottom);
+  
+    femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    femaleBacks.style.backgroundPosition = `${o_xpos}px ${o_ypos}px`; 
+  
+    if (slideValStomach == 0) {
+      o_xpos = -4329 + o_xpos;
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else if (slideValStomach == 4){
+      rz_xpos = -7215 + rz_xpos;
+      rz_ypos = -504 * slideValShoulderWt;
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    } else {
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    }
+  
+    if (slideValShoulderHt == 0) {
+      rk_ypos = 0 + (-4329 * slideValNeckShape);
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else if (slideValShoulderHt >= 1 && slideValShoulderHt <= 2) {
+      rk_ypos = -489 + (-4329 * slideValNeckShape);
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else if (slideValShoulderHt >= 3) {
+      rk_ypos = -978 + (-4329 * slideValNeckShape);
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else { defaultModel(); }
+  
+   
+  }
+
+//above backside
+function recBackside(val, armVal) {
+    let slideValShoulderWt = document.getElementById("slider-shoulder-width").value;  
+    let slideValShoulderHt = document.getElementById("slider-shoulder-height").value;
+    let slideValArm = document.getElementById("slider-arm-size").value;
+    let slideValBreasts = document.getElementById("slider-breasts-shape").value; 
+    let slideValStomach = document.getElementById("slider-stomach-shape").value;
+    var slideValLegs = document.getElementById("slider-leg-size").value;
+    let slideValHips = document.getElementById("slider-hip-size").value;
+    let slideValBottom = document.getElementById("slider-bottom-shape").value;  
+    let slideValNeckWt = document.getElementById("slider-neck-width").value;  
+    let slideValNeckShape = document.getElementById("slider-neck-shape").value;  
+    o_ypos = (-314 * slideValStomach);
+    o_xpos = (-481 * slideValShoulderWt); 
+    var legs_pos = femaleLegs.style.backgroundPosition;
+    var splitlegs = legs_pos.split(" ");
+    l = splitlegs[0];
+    z_xpos = parseInt(l);
+    rz_xpos = (-481 * slideValLegs) + (-2405 * slideValHips);
+    rz_ypos = (-516 * slideValBottom);
+  
+  
+    femaleBacks.style.backgroundPosition = `${o_xpos}px ${o_ypos}px`; 
+  
+    if (slideValShoulderHt == 0) {
+      val = Number(0);
+    } else if (slideValShoulderHt >= 1 && slideValShoulderHt <= 2) {
+      val = Number(1);
+    } else if (slideValShoulderHt >= 3) {
+      val= Number(2);
+    } else { defaultModel(); }
+  
+  
+    if (slideValArm == 0) {   
+      armVal = Number(0);
+    } else if (slideValArm >= 1 && slideValArm <=2) {
+      armVal = Number(-885);
+    } else if (slideValArm >= 3){
+      armVal = Number(-1770);
+    } else { defaultModel(); }
+  
+    rypos = (-295 * val) + armVal;
+    femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+  
+    if (slideValStomach == 0) {
+      o_xpos = -4329 + o_xpos;
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else {
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    }
+  
+    if (slideValStomach == 4) {
+      rz_ypos = -3612 + rz_ypos;
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    } else {
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    }
+  
+  }
+
+//OW backside
+
+function recBackside(val, armVal) {
+    let slideValShoulderWt = document.getElementById("slider-shoulder-width").value;  
+    let slideValShoulderHt = document.getElementById("slider-shoulder-height").value;
+    let slideValArm = document.getElementById("slider-arm-size").value;
+    let slideValBreasts = document.getElementById("slider-breasts-shape").value; 
+    let slideValStomach = document.getElementById("slider-stomach-shape").value;
+    var slideValLegs = document.getElementById("slider-leg-size").value;
+    let slideValHips = document.getElementById("slider-hip-size").value;
+    let slideValBottom = document.getElementById("slider-bottom-shape").value;  
+    let slideValNeckWt = document.getElementById("slider-neck-width").value;  
+    let slideValNeckShape = document.getElementById("slider-neck-shape").value;  
+    o_ypos = (-249 * slideValStomach);
+    o_xpos = (-526 * slideValShoulderWt); 
+    var legs_pos = femaleLegs.style.backgroundPosition;
+    var splitlegs = legs_pos.split(" ");
+    l = splitlegs[0];
+    z_xpos = parseInt(l);
+    rz_xpos = (-526 * slideValLegs) + (-2630 * slideValHips);
+    rz_ypos = (-526 * slideValBottom);
+  
+  
+    femaleBacks.style.backgroundPosition = `${o_xpos}px ${o_ypos}px`; 
+  
+    if (slideValShoulderHt == 0) {
+      val = Number(0);
+    } else if (slideValShoulderHt >= 1 && slideValShoulderHt <= 2) {
+      val = Number(1);
+    } else if (slideValShoulderHt >= 3) {
+      val= Number(2);
+    } else { defaultModel(); }
+  
+  
+    if (slideValArm == 0) {   
+      armVal = Number(0);
+    } else if (slideValArm >= 1 && slideValArm <=2) {
+      armVal = Number(-885);
+    } else if (slideValArm >= 3){
+      armVal = Number(-1770);
+    } else { defaultModel(); }
+  
+    rypos = (-295 * val) + armVal;
+    femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+  
+    if (slideValStomach == 0) {
+      o_xpos = -4734 + o_xpos;
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    } else {
+      femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+    }
+  
+    if (slideValStomach == 0) {
+      rz_ypos = -3156 + rz_ypos;
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    } else if (slideValStomach == 4) {
+      rz_ypos = -4734 + rz_ypos;
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    } else {
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    }
+  
+  }
+
+  neckAdj = (slideValCrotch * 9); //old code: neckAdj = (slideValTorso * 6) + (slideValCrotch * 9);
+  headBase = -88; //new value
+  Inc1 = -12;  
+  Inc2 = -10;
+  const neckBase = Number(`${nn * -1}`);
+  shouldersBase = 313;
+  torsoInc = 6;
+  heightInc = 3;
+
+
+   if (slideValShoulderWt >= 0 && slideValShoulderWt <= 3) {
+    neckInc = Number(0);
+    n = neckBase + neckInc;
+    n = Number(n);
+    femaleNeck.style.bottom = `${n}px`;
+ 
+   } else if (slideValShoulderWt >= 4 && slideValShoulderWt <= 8){
+     neckInc = Number(2);
+     n = neckBase + neckInc;
+     n = Number(n);
+     femaleNeck.style.bottom = `${n}px`;
+ 
+   } else {defaultModel();}
+
+   if (slideValShoulderHt >= 0 && slideValShoulderHt <= 2) {
+
+   } else if (slideValShoulderHt >= 3) {
+    if (slideValShoulderWt <= 2){
+      femaleNeck.style.bottom = "-29px";
+    } else if (slideValShoulderWt >= 3 && slideValShoulderWt <= 5) {
+      femaleNeck.style.bottom = "-27px";
+    } else if (slideValShoulderWt >= 6) {
+      femaleNeck.style.bottom = "-26px";
+    } else { defaultModel(); }
+   }
+
+
+   //old shoulder height value
+   
+   if (slideValShoulderHt == 3 || slideValShoulderHt == 4) {
+    document.getElementById("slider-shoulder-height").value = "2";
+    w = (-1475 * slideValArm) + (-295 * 2);
+    femaleShoulders.style.backgroundPosition = `${x}px ${w}px`; 
+
+  } else { 
+    w = (-1475 * slideValArm) + (-295 * slideValShoulderHt);
+    document.getElementById("slider-shoulder-height").value = slideValShoulderHt;
+    femaleShoulders.style.backgroundPosition = `${x}px ${w}px`; 
+
+    if (slideValShoulderHt == 0) {
+      femaleBreasts.style.bottom = "109px";
+    } else {
+      femaleBreasts.style.bottom = "101px";
+    }
+
+    if (slideValNeckShape == 0) {
+      if (slideValShoulderHt == 1) {
+        if (slideValShoulderWt <= 1) {
+          femaleNeck.style.bottom = "-8px";
+        } else if (slideValShoulderWt >= 2 && slideValShoulderWt <= 5) {
+          femaleNeck.style.bottom = "-6px";
+        } else {
+          femaleNeck.style.bottom = "-4px";
+        }
+      } else {
+        if (slideValShoulderWt <= 2) {
+          femaleNeck.style.bottom = "-6px";
+        } else {
+          femaleNeck.style.bottom = "-5px";
+        }
+      }
+    } else if (slideValNeckShape == 1) {
+      if (slideValShoulderHt == 1) {
+        femaleNeck.style.bottom = "-5px";
+      } else {          
+        if (slideValShoulderWt <= 5) {
+          femaleNeck.style.bottom = "-9px";
+        } else {M
+          femaleNeck.style.bottom = "-7px";
+        }
+      }
+    } else { defaultModel(); }
+  }  
+
+  
+  if(slideValArm <= 2 ) {
+    ypos = 0;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+
+  } else if (slideValArm >= 3 && slideValArm <= 4) {
+    ypos = -729;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+
+  } else if (slideValArm == 5) {
+    ypos = -1458;
+    rypos = (-243 * y) + ypos; 
+    femaleRearShoulders.style.backgroundPosition = `${xpos}px ${rypos}px`;
+  }
+  recBackside();
+
+
+  //morbid backside
+function recBackside(val, armVal) {
+  let slideValShoulderWt = document.getElementById("slider-shoulder-width").value;  
+  let slideValShoulderHt = document.getElementById("slider-shoulder-height").value;
+  let slideValArm = document.getElementById("slider-arm-size").value;
+  let slideValBreasts = document.getElementById("slider-breasts-shape").value; 
+  let slideValStomach = document.getElementById("slider-stomach-shape").value;
+  var slideValLegs = document.getElementById("slider-leg-size").value;
+  let slideValHips = document.getElementById("slider-hip-size").value;
+  let slideValBottom = document.getElementById("slider-bottom-shape").value;  
+  let slideValNeckWt = document.getElementById("slider-neck-width").value;  
+  let slideValNeckShape = document.getElementById("slider-neck-shape").value;  
+  o_ypos = (-302 * slideValStomach);
+  o_xpos = (-581 * slideValShoulderWt); 
+  var legs_pos = femaleLegs.style.backgroundPosition;
+  var splitlegs = legs_pos.split(" ");
+  l = splitlegs[0];
+  z_xpos = parseInt(l);
+  rz_xpos = (-581 * slideValLegs) + (-2905 * slideValHips);
+  rz_ypos = (-4212 * slideValBottom) + (-468 * slideValShoulderWt);
+
+  femaleBacks.style.backgroundPosition = `${o_xpos}px ${o_ypos}px`; 
+
+  if (slideValShoulderHt == 0) {
+    val = Number(0);
+  } else if (slideValShoulderHt >= 1 && slideValShoulderHt <= 2) {
+    val = Number(1);
+  } else if (slideValShoulderHt >= 3) {
+    val= Number(2);
+  } else { defaultModel(); }
+
+
+  if (slideValArm == 0) {   
+    armVal = Number(0);
+  } else if (slideValArm >= 1 && slideValArm <=2) {
+    armVal = Number(-885);
+  } else if (slideValArm >= 3){
+    armVal = Number(-1770);
+  } else { defaultModel(); }
+
+  rypos = (-295 * val) + armVal;
+  femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+
+  if (slideValStomach == 0) {
+    femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+  } else {
+    femaleRearShoulders.style.backgroundPosition = `${o_xpos}px ${rypos}px`;
+  }
+
+  if (slideValStomach == 0) {
+    document.getElementById("slider-bottom-shape").style.max = "2"; 
+    if (slideValBottom >= 3) {
+      rz_xpos = -8715 + (rz_xpos);
+      rz_ypos = (-4212 * slideValBottom) + (-468 * 2);      
+      document.getElementById("slider-bottom-shape").value = "2";
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    } else {
+      rz_xpos = -8715 + (rz_xpos);
+      rz_ypos = (-4212 * slideValBottom) + (-468 * slideValShoulderWt);      
+      document.getElementById("slider-bottom-shape").value = slideValBottom;
+      femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+    }
+  } else if (slideValStomach == 4) {
+    rz_xpos = -8715 + rz_xpos;
+    rz_ypos = -468 * slideValShoulderWt;
+    document.getElementById("slider-bottom-shape").style.max = "0"; 
+    document.getElementById("slider-bottom-shape").value = "0";
+    femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+
+  } else {
+    femaleBottoms.style.backgroundPosition = `${rz_xpos}px ${rz_ypos}px`; 
+  }
+
+}
+
+
+
+    if (slideValCrotch == 0) {
+      x = (headBase - (Inc1 * slideValCrotch)) + ((torsoInc * slideValTorso) + -(heightInc * slideValNeckHt));
+      maleHead.style.bottom = `${x}px`;
+      n = (neckBase - (Inc1 * slideValCrotch)) + (torsoInc * slideValTorso);
+      maleHead.style.bottom = `${n}px`;
+      s = (shouldersBase - (Inc1 * slideValCrotch)) + (torsoInc * slideValTorso);
+      maleHead.style.bottom = `${s}px`;
+
+
+    } else if (slideValCrotch == 1) {
+      
+      x = headBase - Inc1  + (-(heightInc * slideValNeckHt) + (torsoInc * slideValTorso));
+      maleHead.style.bottom = `${x}px`;
+      n = neckBase - Inc1 + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-neck').style.bottom = `${n}px`;
+      s = (shouldersBase - (Inc1 * slideValCrotch)) + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-shoulders').style.bottom = `${s}px`;
+    } else if (slideValCrotch == 2) { 
+  
+      x = headBase - Inc2  + (-(heightInc * slideValNeckHt) + (torsoInc * slideValTorso));
+      maleHead.style.bottom = `${x}px`;
+      n = neckBase - Inc2 + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-neck').style.bottom = `${n}px`;
+      s = shouldersBase - Inc2 + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-shoulders').style.bottom = `${s}px`;
+    } else {
+  
+      x = (headBase - (Inc1 * slideValCrotch)) + ((torsoInc * slideValTorso) + -(heightInc * slideValNeckHt));
+      maleHead.style.bottom = `${x}px`;
+      n = (neckBase - (Inc1 * slideValCrotch)) + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-neck').style.bottom = `${n}px`;
+      s = (shouldersBase - (Inc1 * slideValCrotch)) + (torsoInc * slideValTorso);
+      document.getElementById('male-OW-shoulders').style.bottom = `${s}px`;
+     }
+
+     <!-------- index page old controller and modeller ------->
+     <div class="col-lg-3 order-1">
+     <a name="Shape-Me-Body-Modeler"></a>
+     <div class="flip-back modeler-full" id="">
+       <h4 style="color:#990000; ">ShapeMe&trade; Modeler</h4>
+       @include('frontend.inc.controls-left')
+     </div><!----- end flip card back ----->
+   </div>
+   <div class="col-lg-6 order-3 order-lg-2">
+     <div id="column-center">
+       <span id="fb-span">
+         <button class="fr-buttons" id="fb-on" onclick="showBody()">Show Rear Body</button>
+       </span>
+       <div id="modeler">
+         <div id="mshape">
+           <span id="front-body">
+             <div class="full scalable" id="head"></div>
+             <div class="full scalable" id="neck"></div>
+             <div class="full scalable" id="breasts"></div>
+             <div class="full scalable" id="shoulders"></div>
+             <div class="full scalable" id="stomach"></div>
+             <div class="full scalable" id="legs"></div>
+           </span>
+           <span id="back-body" style="display:none">
+             <div class="full scalable" id="head-rear"></div>
+             <div class="full scalable" id="neck-rear"></div>
+             <div class="full scalable" id="shoulders-rear"></div> 
+             <div class="full scalable" id="back"></div> 
+             <div class="full scalable" id="bottom"></div>
+           </span>
+         </div>
+       </div><!----- end modeler ------->
+       <button class="fr-buttons" id="refresh-modeler" onclick="refresh()">Refresh</button>
+     </div>
+   </div>
+   <div class="col-lg-3 order-2 order-lg-3">
+     <div class="flip-back modeler-full" id="">
+       <p class="text-center">Move the sliders of each body feature to reshape the model. Click "Body Rear" to change the rear side of your model.</p>
+
+       @include('frontend.inc.controls-right')
+       <div class="" id="modeller-button-wrap">
+         <button class="btn12 anchor" id="modeller-submit" onclick="classify()">Submit</button>
+       </div>
+     </div><!----- end flip card back ----->
+   </div>

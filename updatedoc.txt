@@ -1,0 +1,27 @@
+index : add form 253 and display:none 255
+profile_setting : add d-none class in your body shape section
+profile_newsfeed.blade: remove psot-image class and move plus-icon to public/uploads and fix video support
+profile_post.blade.php : fix video support
+confetti.blade : fix responsive problem and add opacity
+register_form.blade.php and description.blade.php registration form fields read-only
+footer.blade.php - Prevent user from entering non-letter alphanumeric characters for name input
+user_post.blade psot-image class
+UsersController.php    return redirect()->route('get_user_profile');
+SocialController.php fix profile pages of other members
+modoler.js  add  bodyPosVal('male', 'skinny'); and remove;
+Helpers.php : create is_video()
+
+custom-style.css:  #social-links {
+    				/* text-align: center; */
+   				 font-size: 17px;
+				}
+features.css : #female-morbid-head {
+    				bottom: -63px;
+   				 right: 6px;
+				}
+responsive.css 		@media (min-width: 768px) {
+   			 #summit {
+   			     display: none;
+    						}
+							}
+
