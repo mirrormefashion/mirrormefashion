@@ -90,8 +90,109 @@ class UsersController extends Controller
         return redirect('/');
     }
 
-    // Save new user
+   
     public function store(Request $request)
+    {
+
+
+        // Validate incoming data
+        // $request->validate([
+        //     'name' => 'required|string|max:255',
+        //     'email' => 'required|email|unique:users,email',
+        //     'password' => 'required|confirmed|min:6',
+        //     'shape_keyes' => 'required|json',
+        //     'bust' => 'required|numeric',
+        //     'shoe_size' => 'required|numeric',
+        //     'weight' => 'required|numeric',
+        //     'height' => 'required|numeric',
+        //     'bmi' => 'required|numeric',
+        //     'age_range' => 'required|numeric',
+        //     'gender' => 'required|in:female,male,non-binary',
+        //     'shape' => 'required|string'
+        // ]);
+        $user = new User();
+        $email = User::where('email', $request->email)->first();
+        if ($email == null) {
+            $user->email = $request->email;
+        } else {
+            flash('You have already registered!');
+            return back();
+        }
+
+        $validator = Validator::make($request->all(), [
+            'password' => 'required|confirmed|max:12| min:5'
+
+        ]);
+
+        if ($validator->fails()) {
+            flash(translate('Password confirmation does not match!'))->error();
+            return back();
+        }
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+
+        ]);
+
+        if ($validator->fails()) {
+            flash(translate('Name is required!'))->error();
+            return back();
+        } else {
+            $user->name = $request->name;
+        }
+      /*   $validator = Validator::make($request->all(), $this->bodyDataRules()); */
+        $user->password = Hash::make($request->password);
+        $user_name = floor(time() - 999999999) . uniqid() . Str::random(9);
+        $user->name = $request->name;
+        $user->user_name = $user_name;
+        // $user->country = $request->country;
+         $user->save();
+        $customer = new Customer();
+        $customer->user_id = $user->id;
+         $customer->save();
+         $customer->user_id = $user->id;
+
+         $bodydata = new BodyData();
+         $bodydata->user_id = $user->id;
+ 
+         // Conditionally set bust only for females
+         if ($request->gender == 'female') {
+             $bodydata->bust = $request->bust;
+         }
+ 
+         $bodydata->weight = $request->weight;
+         $bodydata->height = $request->height;
+         $bodydata->bmi = $request->bmi;
+         $bodydata->gender = $request->gender;
+         $bodydata->shoe_size = $request->shoe_size;
+         $bodydata->shape = $request->shape; // Include shape if needed
+         $bodydata->shape_keys = $request->shape_keys; // Store the shape keys as well
+         $bodydata->alphanumeri_code = $request->alphanumeri_code; // Store the shape keys as well
+ 
+         // Save the body data
+         $bodydata->save();
+
+                
+         // Sign the user in
+        Auth::attempt($request->only('email', 'password'));
+
+        if ($user->email != null) {
+            if (BusinessSetting::where('type', 'email_verification')->first()->value != 1) {
+                $user->email_verified_at = date('Y-m-d H:m:s');
+                $user->save();
+                flash(translate('Registration successfull.'))->success();
+            } else {
+                event(new Registered($user));
+                flash(translate('Registration successfull. Please verify your email.'))->success();
+            }
+        }
+
+        return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());
+       
+        
+    }
+    // Save new user
+    public function oldstore(Request $request)
     {
 
 
@@ -283,7 +384,7 @@ class UsersController extends Controller
             ->with('success', 'You have successfully upload image.')
             ->with('image', $imageName);
     }
-
+  
     // Handle user media upload
     public function uploadMedia(Request $request)
     {

@@ -21,6 +21,8 @@
     },
     "dependencies": {
         "laravel-echo": "^1.15.3",
-        "pusher-js": "^8.4.0-rc2"
+        "next": "^14.2.5",
+        "pusher-js": "^8.4.0-rc2",
+        "react-dom": "^18.3.1"
     }
 }

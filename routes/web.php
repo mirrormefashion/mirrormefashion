@@ -413,6 +413,7 @@ Route::get('user/profile/messanger-page','SocialController@messanger_page')->nam
 Route::get('user/profile/notification-page','SocialController@notification_page')->name('get-notification-page');
 Route::get('user/profile/media-page','SocialController@media_page')->name('get-media-page');
 Route::get('user/profile/body-shape-page','SocialController@body_shape')->name('get-body-shape-page');
+Route::get('user/profile/edit-body-shape','SocialController@edit_body_shape')->name('edit-body-shape');
 Route::post('user/profile-update','SocialController@update_profile')->name('user.profile-update');
 Route::post('user/about-setting-update','SocialController@about_setting_update')->name('user.about-setting-update');
 Route::post('user/body-shape-update','SocialController@update_body_data')->name('user.update-body-shape');

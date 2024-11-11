@@ -524,11 +524,7 @@ function mhips() {
 
 function classify() {
 
-    stomach = document.getElementById("label-stomach-shape").value;
-    bust = document.getElementById("slider-breasts-shape").value;
-    shoulders = document.getElementById("slider-shoulder-height").value;
-    legs = document.getElementById("slider-leg-size").value;
-    hips = document.getElementById("slider-hip-size").value;
+   
 
     if (stomach == "Muffintop" || "Spoon" || "Rectangle") {
         if (bust >= 5) {

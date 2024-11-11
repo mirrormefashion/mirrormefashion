@@ -421,70 +421,79 @@ return view('frontend/social/settings');
     }
     public function body_shape()
     {
-        return view('frontend/social/bodyshape');
-    }
-  
-
-    public function update_body_data( Request $request){
-       
-     
-        $user = Auth::user();
-        $bodydata = BodyData::where('user_id', $user->id)->first();
-        $body_stat= BodyStat::where('user_id', $user->id)->first();
-        //Body model Slider value 
-        $bodydata->head_shape = $request->head_shape;
-        $bodydata->head_size= $request->head_size;
-        $bodydata->neck_shape = $request->neck_shape;
-        $bodydata->neck_height = $request->neck_height;
-        $bodydata->neck_width = $request->neck_width;
-        $bodydata->shoulder_height = $request->shoulder_height;
-        $bodydata->shoulder_width = $request->shoulder_width;
-        $bodydata->arm_size = $request->arm_size;
-        $bodydata->breasts_shape = $request->breasts_shape;
-     
-        $bodydata->stomach_shape = $request->stomach_shape;
-       
-        $bodydata->legs_size = $request->legs_size;
-        $bodydata->hips_size = $request->hips_size;
-      
-     
-        //Body model css possiton data 
-       
-
-         //male only
-         if ($request->torso_height != null && $request->crotch_height !=null) {
-            $bodydata->torso_height = $request->torso_height;
-            $bodydata->crotch_height = $request->crotch_height;
-            $body_stat->torso_height_val  =$request->torso_height_val;
-            $body_stat->crotch_height_val  =$request->crotch_height_val;
-        
-        }
-        $body_stat->head_shape_val = $request->head_shape_val;
-        $body_stat->head_size_val = $request->head_size_val;
-        $body_stat->neck_shape_val  =$request->neck_shape_val;
-        $body_stat->neck_height_val  =$request->neck_height_val;
-        $body_stat->neck_width_val  =$request->neck_width_val;
-        $body_stat->shoulder_height_val  =$request->shoulder_height_val;
-        $body_stat->shoulder_width_val  =$request->shoulder_width_val;
-        $body_stat->arm_size_val  =$request->arm_size_val;
-        $body_stat->breasts_shape_val  =$request->breasts_shape_val;
-        $body_stat->stomach_shape_val  =$request->stomach_shape_val;
+        // Get the authenticated user's ID
+        $userId = Auth::id();
     
-        $body_stat->leg_size_val  =$request->leg_size_val;
-        $body_stat->hip_size_val  =$request->hip_size_val;
-
-        $body_stat->head_bg_pos = $request->head_bg_pos;
-        $body_stat->breasts_bg_pos = $request->breasts_bg_pos;
-        $body_stat->neck_bg_pos = $request->neck_bg_pos;
-        $body_stat->shoulders_bg_pos = $request->shoulders_bg_pos;
-        $body_stat->stomach_bg_pos = $request->stomach_bg_pos;
-        $body_stat->legs_bg_pos = $request->legs_bg_pos;
-        $body_stat->weight_class = $request->weight_class;
-        if ($bodydata->update() && $body_stat->update() ) {
-            flash('Body Data has been Updated')->success();
+        // Fetch body data for the authenticated user
+        $bodyData = BodyData::where('user_id', $userId)->first();
+    
+        // Check if body data exists
+        if (!$bodyData) {
+            return redirect()->back()->withErrors(['error' => 'No body data found for this user.']);
         }
-        return back();
+    
+        // Pass shape_keyes and other body data to the view
+        return view('frontend.social.bodyshape', [
+            'shape_keyes' => json_decode($bodyData->shape_keys, true),
+            'bodyData' => $bodyData
+        ]);
     }
+   public function edit_body_shape(){
+        // Get the authenticated user's ID
+        $userId = Auth::id();
+    
+        // Fetch body data for the authenticated user
+        $bodyData = BodyData::where('user_id', $userId)->first();
+    
+        // Check if body data exists
+        if (!$bodyData) {
+            return redirect()->back()->withErrors(['error' => 'No body data found for this user.']);
+        }
+    
+        // Pass shape_keyes and other body data to the view
+        return view('frontend.social.editbodyshape', [
+            'shape_keyes' => json_decode($bodyData->shape_keys, true),
+            'bodyData' => $bodyData
+        ]);
+   }
+
+   public function update_body_data(Request $request)
+   {
+       // Get the authenticated user
+       $user = Auth::user();
+   
+       // Check if the user has a BodyData record
+       $bodydata = BodyData::where('user_id', $user->id)->first();
+   
+       if ($bodydata) {
+           // Update fields based on request input
+           // Only update bust for female users
+           if ($user->gender == 'female') {
+               $bodydata->bust = $request->bust;
+           }
+   
+           // Update other fields regardless of gender
+           $bodydata->weight = $request->weight;
+           $bodydata->height = $request->height;
+           $bodydata->bmi = $request->bmi;
+           $bodydata->gender = $request->gender;
+           $bodydata->shoe_size = $request->shoe_size;
+           $bodydata->shape = $request->shape; // Optional field if shape data is needed
+   
+           // Update shape keys and alphanumeric code if provided
+           $bodydata->shape_keys = $request->shape_keyes; // Ensure 'shape_keyes' matches your form field
+           $bodydata->alphanumeric_code = $request->alphanumeric_code; // Ensure 'alphanumeric_code' is in your request
+   
+           // Save the updated body data
+           $bodydata->save();
+  
+           // Optionally return a success response
+           return response()->json(['message' => 'Body data updated successfully.'], 200);
+       } else {
+           // If no BodyData record exists for this user, return an error
+           return response()->json(['error' => 'No body data found for the authenticated user.'], 404);
+       }
+   }
     public function notify_update(Request $request)
     {
 

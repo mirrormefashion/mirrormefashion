@@ -46,7 +46,9 @@
 
     <!-- Favicon -->
     <link rel="icon" href="{{ uploaded_asset(get_setting('site_icon')) }}">
-   
+   <script>
+    const MODELER_DR =  "{{static_asset('assets/modeler')}}";
+   </script>
     <!-- Google Fonts -->
 {{--
     <link rel="stylesheet" type="text/css" href="{{ app()->isLocal() ? asset('public/home/css/app.css') : asset('public/home/css/app.css') }}">
@@ -190,16 +192,20 @@
 <body>
     @include('frontend.inc.header')
     @yield('content')
-    <script>
-        const assetBaseUrl = "{{ static_asset('') }}";
-    </script>
+   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    {{--  <script src="{{ static_asset('assets/js/aiz-core.js') }}"></script> --}}
+    
+    <script src="{{ static_asset('assets/js/babylon/babylon.js') }}"></script>
+    <script src="{{ static_asset('assets/js/babylon/glTF2FileLoader.js') }}"></script>
+  
     <script src="{{ static_asset('assets/js/app.js') }}"></script>
+   
   
     @yield('script')
 
-    
+    @stack('scripts')
+
     @if (get_setting('show_cookies_agreement') == 'on')
         <div class="aiz-cookie-alert shadow-xl">
             <div class="p-3 bg-dark rounded">
